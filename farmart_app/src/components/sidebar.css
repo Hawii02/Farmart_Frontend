@@ -1,0 +1,23 @@
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    height: 60vh;
+    padding: 20px;
+    background-color: white;
+    
+}
+.sidebar li{
+    padding-top: 25px;
+}
+
+.sidebar li:hover{
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove bullets */
+  }
+  
