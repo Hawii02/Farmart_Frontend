@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <ul className="navbar-links">
         <li>
-          <Link to="/signup">SignUp</Link>
+          <Link to="/signup">Sign Up</Link>
         </li>
         <li>
           <Link to="/">Home</Link>
@@ -20,10 +20,10 @@ const Navbar = () => {
           <Link to="/products">Products</Link>
         </li>
         <li>
-          <Link to="/aboutus">AboutUs</Link>
+          <Link to="/aboutus">About Us</Link>
         </li>
         <li>
-          <Link to="/contactus">ContactUs</Link>
+          <Link to="/contactus">Contact Us</Link>
         </li>
       </ul>
     </nav>

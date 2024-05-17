@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px;
+  padding-left: 50px;
 }
-
 
 .about-us-content {
   max-width: 800px;
@@ -32,7 +31,8 @@
 
 .feature-list {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 15px;
+  text-align: justify;
 }
 
 .feature-item {
@@ -44,12 +44,74 @@
   box-shadow: 0px 5px 15px rgba(0, 128, 0, 0.1);
 }
 
-@media (max-width: 600px) {
-  .about-us-container {
-    padding: 30px 10px;
-  }
-  
-  .about-us-content {
-    padding: 0 20px;
-  }
+.about-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-div img {
+  max-width: 45%;
+  max-height: 45%;
+}
+
+.description-about {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  text-align: justify;
+}
+
+.mission {
+  display: flex;
+  flex-direction: row;
+}
+
+.description-mission {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding-right: 15px;
+  text-align: justify;
+}
+
+.mission img {
+  max-width: 45%;
+  max-height: 45%;
+}
+
+.values {
+  display: flex;
+  flex-direction: row;
+}
+
+.values img {
+  height: 45%;
+  max-width: 45%;
+  padding-top: 80px;
+}
+
+.vision {
+  display: flex;
+  flex-direction: row;
+}
+
+.vision img {
+  max-width: 45%;
+  max-height: 45%;
+  padding-bottom: 40px;
+}
+
+.description-vision {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding-right: 15px;
+  text-align: justify;
+  padding-top: 30px;
+}
+
+.about-img {
+  height: 200%;
+  width: 200%;
 }
