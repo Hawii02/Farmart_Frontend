@@ -6,6 +6,7 @@ import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import NavBar from "./components/NavBar";
 import MyCart from "./components/MyCart";
+import Farmers from "./components/Farmers";
 import { CartProvider } from "./components/MyCartContext"; 
 import "./styles/App.css";
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/cart" element={<MyCart />} /> 
+          <Route path="/farmers" element={<Farmers />} />
         </Routes>
       </div>
     </div>
