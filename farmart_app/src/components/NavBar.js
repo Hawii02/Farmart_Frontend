@@ -1,9 +1,12 @@
 
-import React from "react";
+import React, { useContext } from 'react';
 import "./NavBar.css";
 import { Link } from "react-router-dom"; 
+import { CartContext } from './MyCartContext';
 
-const Navbar = () => {
+function Navbar () {
+  const { getTotalItems } = useContext(CartContext);
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -11,19 +14,19 @@ const Navbar = () => {
       </div>
       <ul className="navbar-links">
         <li>
-          <Link to="/signup">Sign Up</Link>
-        </li>
-        <li>
           <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/products">Products</Link>
         </li>
         <li>
           <Link to="/aboutus">About Us</Link>
         </li>
         <li>
           <Link to="/contactus">Contact Us</Link>
+        </li>
+        <li>
+          <Link to="/signup">Account</Link>
+        </li>
+        <li>
+          <Link to="/cart">My Cart ({getTotalItems()})</Link>
         </li>
       </ul>
     </nav>
