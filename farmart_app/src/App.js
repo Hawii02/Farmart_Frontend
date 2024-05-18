@@ -9,6 +9,9 @@ import MyCart from "./components/MyCart";
 import Farmers from "./components/Farmers";
 import { CartProvider } from "./components/MyCartContext"; 
 import "./styles/App.css";
+import AddAnimal from "./components/AddAnimal";
+import ConfirmRejectOrder from "./components/ConfirmRejectOrder";
+import UpdateAnimal from "./components/UpdateAnimal";
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/cart" element={<MyCart />} /> 
           <Route path="/farmers" element={<Farmers />} />
+          <Route path="/addanimal" element={<AddAnimal />} />
+          {/* <Route path="/confirmrejectorder" element={<ConfirmRejectOrder/>} /> */}
+          <Route path="/updateanimal" element={<UpdateAnimal />} />
         </Routes>
       </div>
     </div>
