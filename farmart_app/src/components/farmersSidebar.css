@@ -1,0 +1,27 @@
+.farmersidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    height: 60vh;
+    padding: 20px;
+    background-color: white;
+    margin-left: 3%;
+    padding-left: 0%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.farmersidebar li{
+    padding-top: 25px;
+    
+}
+.farmersidebar li:hover{
+    text-transform: uppercase;
+    color: green;
+}
+.farmersidebar ul {
+    list-style-type: none; /* Remove bullets */
+  }
+  
