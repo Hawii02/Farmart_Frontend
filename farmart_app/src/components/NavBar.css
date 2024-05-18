@@ -31,7 +31,6 @@
   }
   
   .navbar-links li a:hover {
-    background: green;
+    text-decoration: underline;
     font-style: oblique;
-    
   }

@@ -6,6 +6,7 @@ body{
     display: flex;
     flex-direction: row;
     height: 100%;
+    
 }
 
 .home-container {
@@ -29,8 +30,11 @@ body{
     text-align: center;
     display: inline-block;
     width: calc(30% - 10px);
-    max-width: 150px;
+    width: 150px;
+    height: 200px;
     margin: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .animal-card .image-container {
@@ -45,8 +49,23 @@ body{
 
 .category-buttons {
     margin-right: 15px;
+    transition: background-color 0.3s;
+}
+
+.category-buttons:hover {
+    background-color: green;
+}
+
+.add-cart-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: green;
 }
 
 .search-bar {
     padding-bottom: 10px;
+}
+
+.button-showdetails:hover {
+    background-color: green;
 }
