@@ -52,6 +52,7 @@
 .about-div img {
   max-width: 45%;
   max-height: 45%;
+  border-radius: 20px;
 }
 
 .description-about {
@@ -80,6 +81,7 @@
 .mission img {
   max-width: 45%;
   max-height: 45%;
+  border-radius: 20px;
 }
 
 .values {
@@ -91,6 +93,7 @@
   height: 45%;
   max-width: 45%;
   padding-top: 55px;
+  border-radius: 20px;
 }
 
 .vision {
@@ -102,6 +105,7 @@
   max-width: 45%;
   max-height: 25%;
   padding-bottom: 40px;
+  border-radius: 20px;
 }
 
 .description-vision {

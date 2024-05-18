@@ -61,7 +61,7 @@ function Farmers() {
       <FarmersSidebar />
       <div className='side-grid'>
       <div className='farmer-title'>
-        <h2> DASHBOARD</h2>
+        <h2>FARMERS DASHBOARD</h2>
         </div>
         
       <div className='farmer-cards'> 

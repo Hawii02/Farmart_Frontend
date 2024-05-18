@@ -30,11 +30,12 @@ body{
     text-align: center;
     display: inline-block;
     width: calc(30% - 10px);
-    width: 150px;
-    height: 200px;
+    width: 170px;
+    height: 300px;
     margin: 10px;
     overflow: hidden;
     word-wrap: break-word;
+    border-radius: 15px;
 }
 
 .animal-card .image-container {

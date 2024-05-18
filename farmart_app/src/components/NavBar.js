@@ -1,4 +1,3 @@
-
 import React, { useContext } from 'react';
 import "./NavBar.css";
 import { Link } from "react-router-dom"; 
@@ -10,7 +9,9 @@ function Navbar () {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">Farmart</Link>
+        <Link to="/">
+          <span className="farm">Farm</span><span className="art">art</span>
+        </Link>
       </div>
       <ul className="navbar-links">
         <li>
