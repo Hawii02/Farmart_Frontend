@@ -30,14 +30,11 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/cart" element={<MyCart />} /> 
-<<<<<<< HEAD
           <Route path="/farmers" element={<Farmers />} />
           <Route path="/addanimal" element={<AddAnimal />} />
           {/* <Route path="/confirmrejectorder" element={<ConfirmRejectOrder/>} /> */}
           <Route path="/updateanimal" element={<UpdateAnimal />} />
-=======
           <Route path='/animal/:id' element={<AnimalDetails />} /> 
->>>>>>> Marion
         </Routes>
       </div>
     </div>
