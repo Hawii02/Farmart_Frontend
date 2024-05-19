@@ -1,0 +1,42 @@
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-height: 60vh; 
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.mySlides {
+    display: none;
+    animation: fade 10s ; 
+    position: relative;
+}
+
+.active {
+    display: block; 
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.mySlides h2 {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 50%; /* Center the element horizontally */
+    transform: translateX(-50%); /* Adjust to move the element back by half its width */
+    color: black; /* Adjust text color as needed */
+    font-weight: bolder;
+    padding-top: 8px;
+    text-align: center;
+    font-size: xx-large;
+    line-height: 1.5;
+}
