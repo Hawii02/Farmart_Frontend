@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import "./NavBar.css";
 import { Link } from "react-router-dom"; 
 import { CartContext } from './MyCartContext';
+import logo from '../Images/logo.png'
 
 function Navbar () {
   const { getTotalItems } = useContext(CartContext);
@@ -10,7 +11,14 @@ function Navbar () {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
+<<<<<<< HEAD
           <span className="farm">Farm</span><span className="art">art</span>
+=======
+          <img className='logo'src={logo} alt="logo" />
+          <span className="navbar-title">
+            Farm<span className='art'>art</span>
+          </span>
+>>>>>>> Marion
         </Link>
       </div>
       <ul className="navbar-links">

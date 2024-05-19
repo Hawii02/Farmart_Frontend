@@ -3,10 +3,9 @@
     /* color: #fff; */
     color: black;
     width: 100%;
-    /* position: fixed; */
-    /* bottom: 0;  */
-    border-radius: 20px;
-    margin-top: 60px;
+    /*position: fixed; 
+    bottom: 0; */  
+    border-radius: 5px;
   }
   
   .footer-content {

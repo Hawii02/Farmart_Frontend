@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import MyCart from "./components/MyCart";
 import Farmers from "./components/Farmers";
 import { CartProvider } from "./components/MyCartContext"; 
+import AnimalDetails from './components/AnimalDetails'
 import "./styles/App.css";
 import AddAnimal from "./components/AddAnimal";
 import ConfirmRejectOrder from "./components/ConfirmRejectOrder";
@@ -29,10 +30,14 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/cart" element={<MyCart />} /> 
+<<<<<<< HEAD
           <Route path="/farmers" element={<Farmers />} />
           <Route path="/addanimal" element={<AddAnimal />} />
           {/* <Route path="/confirmrejectorder" element={<ConfirmRejectOrder/>} /> */}
           <Route path="/updateanimal" element={<UpdateAnimal />} />
+=======
+          <Route path='/animal/:id' element={<AnimalDetails />} /> 
+>>>>>>> Marion
         </Routes>
       </div>
     </div>

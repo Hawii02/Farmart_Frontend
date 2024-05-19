@@ -4,6 +4,7 @@ import Sidebar from './Sidebar'
 import Footer from './Footer'
 import { CartContext } from './MyCartContext';
 import HomeSliders from './HomeSliders';
+import { Link } from 'react-router-dom';
 
 function Home () {
   /*Setting states for loading the DOM, all animals and selecting categories*/
@@ -13,7 +14,7 @@ function Home () {
   ///const [allAnimals, setAllAnimals] = useState(animals);
   const [filteredAnimals, setFilteredAnimals] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [showAnimalDetails, setShowAnimalDetails] = useState(false);
+  ///const [showAnimalDetails, setShowAnimalDetails] = useState(false);
   const { addToCart } = useContext(CartContext);
   const [searchTerm, setSearchTerm] = useState("");
   
@@ -57,11 +58,6 @@ function Home () {
     filterAnimalsByCategory(category);
   };
 
-  /*Function to toggele animal details*/
-  function toggleDetails () {
-    setShowAnimalDetails(!showAnimalDetails);
-  };
-
   /*Function to filter animals by search term*/
   function handleSearchChange(event) {
     const searchTerm = event.target.value.toLowerCase();
@@ -89,16 +85,18 @@ function Home () {
       <div>
         < HomeSliders />
         <div className='home-sidebar'>
-          < Sidebar />
-          <div className='home-container'>
+          <div>
             <div className='search-bar'>
-              <input
-                type="text"
-                placeholder="Search farm animals..."
-                value={searchTerm}
-                onChange={handleSearchChange}
-              />
+                <input
+                  type="text"
+                  placeholder="Search farm animals..."
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                />
             </div>
+            < Sidebar />
+          </div>
+          <div className='home-container'>
           {/*Rendering the category buttons*/}
           <div >
             <button className='category-buttons' onClick={() => handleCategoryClick('all-animals')}>All Animals</button>
@@ -119,28 +117,16 @@ function Home () {
               {filteredAnimals.map((animal) => (
                 <li key={animal.id} className='animal-card'>
                   <div className='image-container'>
-                    <img className='images' src={animal.image_url} alt={animal.name} />
+                    <Link to={'/animal/${animal.id}'} state={{animal}}>
+                      <img className='images' src={animal.image_url} alt={animal.name} />
+                    </Link>
                   </div>
                   <div className='animal-details'>
-                    {animal.breed} - Kes. {animal.price}
+                    {animal.type} - Kes. {animal.price}
                   </div>
                   <div>
                     <button className="add-cart-button" onClick={() => addToCart(animal)}>
                       Add to Cart
-                    </button>
-                  </div>
-                  <div className="additional-animal-details">
-                    {showAnimalDetails && (
-                        <>
-                        <h5>Animal Profile</h5>
-                        <p>Type: {animal.type}</p>
-                        <p>Age: {animal.age}</p>
-                        <p>Weight: {animal.weight}</p>
-                        <p>Description: {animal.description}</p>
-                        </>
-                    )}
-                    <button className= "button-showdetails" onClick={toggleDetails}>
-                        {showAnimalDetails ? 'Hide Profile' : 'Show Animal Profile'}
                     </button>
                   </div>
                 </li>
