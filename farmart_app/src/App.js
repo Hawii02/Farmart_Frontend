@@ -7,6 +7,7 @@ import SignUp from "./components/SignUp";
 import NavBar from "./components/NavBar";
 import MyCart from "./components/MyCart";
 import { CartProvider } from "./components/MyCartContext"; 
+import AnimalDetails from './components/AnimalDetails'
 import "./styles/App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/cart" element={<MyCart />} /> 
+          <Route path='/animal/:id' element={<AnimalDetails />} /> 
         </Routes>
       </div>
     </div>

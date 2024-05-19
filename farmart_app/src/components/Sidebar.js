@@ -11,22 +11,22 @@ function Sidebar() {
     <div className='sidebar'>
         <ul type>
             <li>
-            Filter and Sort<FilterListIcon/>
+            <FilterListIcon/>Filter and Sort
             </li>
             <li>
-           Categories <CategoryOutlinedIcon/>
+            <CategoryOutlinedIcon/> Categories 
             </li>
             <li>
-           Animal Type  <PetsOutlinedIcon/>
+            <PetsOutlinedIcon/> Animal Type  
             </li>
             <li>
-            Breed <PetsOutlinedIcon/>
+            <PetsOutlinedIcon/> Breed 
             </li>
             <li>
-            Price Range <PriceChangeOutlinedIcon/>
+            <PriceChangeOutlinedIcon/> Price Range 
             </li>
             <li>
-           Product Availability  <EventAvailableOutlinedIcon/>
+            <EventAvailableOutlinedIcon/> Product Availability  
             </li>
         </ul>
     </div>

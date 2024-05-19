@@ -1,19 +1,12 @@
-body{
-    height: 100vh;
-}
-
 .home-sidebar {
     display: flex;
-    flex-direction: row;
-    height: 100%;
-    
+    flex-direction: row; 
 }
 
 .home-container {
     margin-top: 30px;
     width: 75%;
     padding-left: 30px;
-    float: right;
 }
 
 .animals {
@@ -31,10 +24,9 @@ body{
     display: inline-block;
     width: calc(30% - 10px);
     width: 150px;
-    height: 200px;
     margin: 10px;
     overflow: hidden;
-    word-wrap: break-word;
+    word-wrap: break-word; 
 }
 
 .animal-card .image-container {
@@ -48,8 +40,11 @@ body{
 }
 
 .category-buttons {
-    margin-right: 15px;
+    margin-right: 10px;
     transition: background-color 0.3s;
+    font-weight: bold;
+    padding-right: 10px;
+    color: rgb(43, 42, 42);
 }
 
 .category-buttons:hover {
@@ -62,10 +57,12 @@ body{
     background-color: green;
 }
 
-.search-bar {
-    padding-bottom: 10px;
-}
-
 .button-showdetails:hover {
     background-color: green;
 }
+
+.search-bar {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+

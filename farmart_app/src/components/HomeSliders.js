@@ -27,7 +27,7 @@ function HomeSliders () {
             <img src="https://images.unsplash.com/photo-1541689221361-ad95003448dc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3" />
         </div>
         <div className={slideIndex === 3 ? "mySlides fade active" : "mySlides fade"}>
-            <h2>From Equines to Livestock, We've Got Your Farming Needs Covered!</h2>
+            <h2>From Equines to Livestock, We've Got All Your Farming Needs Covered!</h2>
             <img src="https://images.unsplash.com/photo-1612225330565-f79af9f92168?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 4" />
         </div>
         <div className={slideIndex === 4 ? "mySlides fade active" : "mySlides fade"}>

@@ -5,12 +5,24 @@
     background-color:none;
     color: black;
     padding: 10px 10px;
+    position: sticky;
+    top: 0;
   }
   
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+
   .navbar-logo a {
-    color:black;
+    display: flex;
+    align-items: centre;
+    color: rgb(80, 77, 77);
     text-decoration: none;
     font-size: 1.5rem;
+    margin-left: 40px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
   }
   
   .navbar-links {
@@ -34,3 +46,17 @@
     text-decoration: underline;
     font-style: oblique;
   }
+
+  .art {
+    color: green
+  }
+
+.logo {
+  max-height: 15%;
+  max-width: 15%;
+}
+
+.navbar-title {
+  margin-top: 10px;
+  margin-left: 3px; 
+} 
