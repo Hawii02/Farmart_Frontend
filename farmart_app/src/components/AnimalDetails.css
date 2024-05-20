@@ -44,14 +44,7 @@
     color: green;
     cursor: pointer;
     text-decoration: none;
-    /*animation: blink 3s infinite;*/
 }
-
-/*@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}*/
 
 .continue-shopping li {
     list-style: none;
@@ -74,5 +67,80 @@
 
 .continue-shopping-button:hover {
     transform: scale(1.2);
-  }
+}
 
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .animal-details-card {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .animal-details-image {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .animal-details-click {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .continue-shopping {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .continue-shopping-button {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+/* For mobile phones and smaller screens */
+@media (max-width: 480px) {
+    .animal-details-card {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .animal-details-image {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .animal-details-click {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .continue-shopping {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .continue-shopping-button {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+}

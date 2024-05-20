@@ -40,7 +40,7 @@
 }
 
 /* Add box shadow to separate sections */
-.about-us-conten-t > * {
+.about-us-content > * {
   box-shadow: 0px 5px 15px rgba(0, 128, 0, 0.1);
 }
 
@@ -118,3 +118,80 @@
   padding-top: 30px;
 }
 
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .about-us-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .description,
+  .description-about,
+  .description-mission,
+  .description-vision {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-div,
+  .mission,
+  .values,
+  .vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-div img,
+  .mission img,
+  .values img,
+  .vision img {
+    max-width: 80%;
+    max-height: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* For mobile phones and smaller screens */
+@media (max-width: 480px) {
+  .about-us-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .description,
+  .description-about,
+  .description-mission,
+  .description-vision {
+    font-size: 0.9rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .about-div img,
+  .mission img,
+  .values img,
+  .vision img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 15px;
+  }
+}

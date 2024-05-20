@@ -1,90 +1,106 @@
-.farmer-container{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    width:100%;
-    /* color: rgba(255, 255, 255, 0.95); */
-    color: black;
-  }
+.farmer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  color: black;
+}
 
-  .side-grid{
-    display:flex;
-    width:100%;
-    flex-direction: column;
-    margin-right: 400px;
-    
+.side-grid {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-right: 400px;
+}
+
+.farmer-title {
+  display: flex;
+  grid-column: span 2;
+  color: green;
+  justify-content: center;
+}
+
+.farmer-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.f-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.f-card:first-child {
+  background-color: #2962ff;
+}
+
+.f-card:nth-child(2) {
+  background-color: #ff6d00;
+}
+
+.f-card:nth-child(3) {
+  background-color: #2e7d32;
+}
+
+.f-card:nth-child(4) {
+  background-color: #d50000;
+}
+
+.card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 60px;
+  height: 300px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 1024px) {
+  .farmer-container {
+    grid-template-columns: 1fr;
   }
   
-  /* .farmer-container1{
-    display: flex;
-    flex-direction: column;
-  } */
-  
-  .farmer-title{
-    display: flex;
-    grid-column: span 2;
-    color: green;
-    justify-content: center;
-    /* padding: 10px 10px; */
+  .side-grid {
+    margin-right: 0;
   }
   
-  .farmer-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    /* margin: 15px 0; */
-    /* height: 40px; */
-    /* margin-right: 1%; */
-    /* width: 100%;
-    height: 100%; */
-    margin: 15px 0;
+  .farmer-title {
+    font-size: 1.5em;
   }
   
-  .f-card{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 8px 15px;
-      border-radius: 5px;
+  .farmer-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
-  
-  .f-card:first-child{
-      background-color: #2962ff;
-  }
-  .f-card:nth-child(2){
-      background-color: #ff6d00;
-  }
-  .f-card:nth-child(3){
-      background-color: #2e7d32;
-  }
-  .f-card:nth-child(4){
-      background-color: #d50000;
-  }
-  
-  .card-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
   
   .charts {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-top: 60px;
-      height: 300px;
-    }
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+}
+
+/* For mobile phones and smaller screens */
+@media screen and (max-width: 768px) {
+  .farmer-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
   
-    @media screen and (max-width: 700px) {
-      .farmer-cards {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        margin-bottom: 5;
-      }
-      .charts {
-          grid-template-columns: 1fr;
-          margin-top: 30px;
-        }
-      }
-  
-  
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+}

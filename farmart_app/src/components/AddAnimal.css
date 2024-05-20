@@ -50,3 +50,45 @@
 .add-animal-button:hover {
   background-color: #218838;
 }
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .add-animal-container {
+    padding: 15px;
+  }
+
+  .add-animal-title {
+    font-size: 1.5rem;
+  }
+
+  .add-animal-input {
+    padding: 7px;
+  }
+
+  .add-animal-button {
+    padding: 9px;
+    font-size: 15px;
+  }
+}
+
+/* For mobile phones and smaller screens */
+@media (max-width: 480px) {
+  .add-animal-container {
+    padding: 10px;
+  }
+
+  .add-animal-title {
+    font-size: 1.2rem;
+  }
+
+  .add-animal-input {
+    padding: 6px;
+  }
+
+  .add-animal-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

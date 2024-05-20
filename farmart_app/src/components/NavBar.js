@@ -2,7 +2,9 @@ import React, { useContext } from 'react';
 import "./NavBar.css";
 import { Link } from "react-router-dom"; 
 import { CartContext } from './MyCartContext';
-import logo from '../Images/logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import logo from '../Images/logo.png';
 
 function Navbar () {
   const { getTotalItems } = useContext(CartContext);
@@ -31,7 +33,10 @@ function Navbar () {
           <Link to="/signup">Account</Link>
         </li>
         <li>
-          <Link to="/cart">My Cart ({getTotalItems()})</Link>
+          <Link to="/cart">
+            <FontAwesomeIcon icon={faShoppingCart} />
+            ({getTotalItems()})
+          </Link>
         </li>
       </ul>
     </nav>

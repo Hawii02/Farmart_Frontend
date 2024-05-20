@@ -1,4 +1,4 @@
-.farmersidebar{
+.farmersidebar {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -13,15 +13,60 @@
     margin-top: 30px;
 }
 
-.farmersidebar li{
+.farmersidebar li {
     padding-top: 25px;
-    
 }
-.farmersidebar li:hover{
+
+.farmersidebar li:hover {
     text-transform: uppercase;
     color: green;
 }
+
 .farmersidebar ul {
     list-style-type: none; /* Remove bullets */
-  }
-  
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .farmersidebar {
+        width: 180px;
+        height: auto;
+        margin-left: 2%;
+        padding: 15px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+
+    .farmersidebar li {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .farmersidebar {
+        width: 160px;
+        padding: 10px;
+        margin-left: 1%;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .farmersidebar li {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .farmersidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .farmersidebar li {
+        padding-top: 10px;
+    }
+}

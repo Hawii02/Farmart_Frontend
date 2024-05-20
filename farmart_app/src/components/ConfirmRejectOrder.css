@@ -50,5 +50,55 @@
 }
 
 .confirm-reject-button:hover {
-  background-color: green;
+  background-color: darkgreen;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .confirm-reject-container {
+    padding: 15px;
+  }
+
+  .confirm-reject-title {
+    font-size: 1.5rem;
+  }
+
+  .confirm-reject-input,
+  .confirm-reject-select,
+  .confirm-reject-textarea {
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .confirm-reject-button {
+    padding: 9px;
+    font-size: 15px;
+  }
+}
+
+/* For mobile phones and smaller screens */
+@media (max-width: 480px) {
+  .confirm-reject-container {
+    padding: 10px;
+  }
+
+  .confirm-reject-title {
+    font-size: 1.2rem;
+  }
+
+  .confirm-reject-input,
+  .confirm-reject-select,
+  .confirm-reject-textarea {
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+  }
+
+  .confirm-reject-button {
+    padding: 8px;
+    font-size: 14px;
+  }
 }

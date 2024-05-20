@@ -8,7 +8,7 @@
 
 .mySlides {
     display: none;
-    animation: fade 10s ; 
+    animation: fade 10s; 
     position: relative;
 }
 
@@ -23,11 +23,6 @@
     animation-duration: 3.5s;
 }
 
-@keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 .mySlides h2 {
     position: absolute;
     top: 10px; /* Adjust as needed */
@@ -39,4 +34,19 @@
     text-align: center;
     font-size: xx-large;
     line-height: 1.5;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .mySlides h2 {
+        font-size: large;
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mySlides h2 {
+        font-size: medium;
+        top: 3px;
+    }
 }

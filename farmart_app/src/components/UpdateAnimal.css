@@ -50,3 +50,36 @@
 .update-animal-button:hover {
   background-color: #218838;
 }
+
+/* Media Queries for Responsive Design */
+
+/* Adjustments for tablets */
+@media screen and (max-width: 768px) {
+  .update-animal-container {
+      max-width: 80%; /* Adjusted maximum width for smaller screens */
+  }
+}
+
+/* Adjustments for mobile devices */
+@media screen and (max-width: 480px) {
+  .update-animal-container {
+      max-width: 90%; /* Further adjusted maximum width for smaller screens */
+      padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .update-animal-title {
+      font-size: 20px; /* Adjusted font size for smaller screens */
+  }
+
+  .update-animal-label {
+      font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .update-animal-input {
+      font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .update-animal-button {
+      font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+}
