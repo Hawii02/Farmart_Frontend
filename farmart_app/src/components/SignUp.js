@@ -40,10 +40,10 @@ function SignUp() {
   };
 
   return (
-    <div className="background-image">
-      <div className="signup-container">
-        <form onSubmit={handleSubmit} className="signup-form">
-          <h1>Sign Up</h1>
+    <div className="unique-background-image">
+      <div className="unique-signup-container">
+        <form onSubmit={handleSubmit} className="unique-signup-form">
+          <h1 className="unique-signup-form-title">Sign Up</h1>
           <input 
             type="text" 
             name="username" 
@@ -52,6 +52,7 @@ function SignUp() {
             onChange={handleChange} 
             required 
             autoComplete="username"
+            className="unique-signup-form-input"
           />
           <input 
             type="email" 
@@ -61,8 +62,9 @@ function SignUp() {
             onChange={handleChange} 
             required 
             autoComplete="email"
+            className="unique-signup-form-input"
           />
-          <div className="password-container">
+          <div className="unique-password-container">
             <input
               type={showPassword ? "text" : "password"}
               name="password"
@@ -71,16 +73,17 @@ function SignUp() {
               onChange={handleChange}
               required
               autoComplete="new-password"
+              className="unique-signup-form-input"
             />
-            <span className="password-toggle-icon" onClick={togglePasswordVisibility}>
+            <span className="unique-password-toggle-icon" onClick={togglePasswordVisibility}>
               <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
             </span>
           </div>
-          <select name="role" value={inputs.role} onChange={handleChange} autoComplete="role">
+          <select name="role" value={inputs.role} onChange={handleChange} autoComplete="role" className="unique-signup-form-select">
             <option value="user">User</option>
             <option value="farmer">Farmer</option>
           </select>
-          <button type="submit">Sign Up</button>
+          <button type="submit" className="unique-signup-form-button">Sign Up</button>
         </form>
       </div>
     </div>

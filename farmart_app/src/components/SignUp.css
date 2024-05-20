@@ -1,59 +1,61 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .background-image {
-    background-image: url('https://wallpapers.com/images/hd/stolen-snapshot-of-a-farm-animal-bap8olzldnb0plxy.jpg');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .auth-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  }
-  
-  .auth-form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  }
-  
-  .auth-form h1 {
-    color: #333;
-    font-size: 24px;
-    text-align: center;
-  }
-  
-  .auth-form input, .auth-form button, .auth-form select {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .auth-form button {
-    background-color:  #4CAF50; /* Green background for the button */
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .auth-form button:hover {
-    background-color:  #45a049; /* Darker green on hover */
-  }
-  
-  .auth-form input:focus, .auth-form select:focus {
-    border-color:  #4CAF50; /* Green focus border */
-  }
+.unique-background-image {
+  background-image: url('https://wallpapers.com/images/hd/stolen-snapshot-of-a-farm-animal-bap8olzldnb0plxy.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unique-signup-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.unique-signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unique-signup-form-title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.unique-signup-form-input,
+.unique-signup-form-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.unique-password-container {
+  position: relative;
+}
+
+.unique-password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.unique-signup-form-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.unique-signup-form-button:hover {
+  background-color: #0056b3;
+}
