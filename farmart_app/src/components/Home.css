@@ -27,6 +27,7 @@
     margin: 10px;
     overflow: hidden;
     word-wrap: break-word; 
+    border-radius: 10px;
 }
 
 .animal-card .image-container {
@@ -55,6 +56,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: green;
+    color:#f9f9f9;
 }
 
 .button-showdetails:hover {
