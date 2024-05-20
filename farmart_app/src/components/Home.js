@@ -17,6 +17,10 @@ function Home () {
   ///const [showAnimalDetails, setShowAnimalDetails] = useState(false);
   const { addToCart } = useContext(CartContext);
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedType, setSelectedType] = useState(null);
+  const [selectedBreed, setSelectedBreed] = useState(null);
+  const [selectedPriceRange, setSelectedPriceRange] = useState(null);
+  const [selectedAvailability, setSelectedAvailability] = useState(null);
   
 
   /*Funtion to fetch all animals when the DOM loads*/
@@ -70,6 +74,38 @@ function Home () {
     setFilteredAnimals(animalsFiltered);
   }
 
+  const filterAnimals = () => {
+    let filtered = allAnimals;
+
+    if (selectedCategory) {
+      filtered = filtered.filter(animal => animal.category.toLowerCase() === selectedCategory.toLowerCase());
+    }
+    if (selectedType) {
+      filtered = filtered.filter(animal => animal.type.toLowerCase() === selectedType.toLowerCase());
+    }
+    if (selectedBreed) {
+      filtered = filtered.filter(animal => animal.breed.toLowerCase() === selectedBreed.toLowerCase());
+    }
+    if (selectedPriceRange) {
+      const [min, max] = selectedPriceRange.split('-').map(Number);
+      filtered = filtered.filter(animal => animal.price >= min && animal.price <= max);
+    }
+    if (selectedAvailability) {
+      filtered = filtered.filter(animal => animal.status.toLowerCase() === selectedAvailability.toLowerCase());
+    }
+    if (searchTerm) {
+      filtered = filtered.filter(animal => 
+        animal.breed.toLowerCase().includes(searchTerm) ||
+        animal.category.toLowerCase().includes(searchTerm) ||
+        animal.type.toLowerCase().includes(searchTerm)
+      );
+    }
+    setFilteredAnimals(filtered);
+  };
+
+  useEffect(() => {
+    filterAnimals();
+  }, [selectedCategory, selectedType, selectedBreed, selectedPriceRange, selectedAvailability, searchTerm]);
 
   /*Renders if there is an error with DOM loading */
   if (isError) {
@@ -94,7 +130,18 @@ function Home () {
                   onChange={handleSearchChange}
                 />
             </div>
-            < Sidebar />
+            <Sidebar
+              selectedCategory={selectedCategory}
+              setSelectedCategory={setSelectedCategory}
+              selectedType={selectedType}
+              setSelectedType={setSelectedType}
+              selectedBreed={selectedBreed}
+              setSelectedBreed={setSelectedBreed}
+              selectedPriceRange={selectedPriceRange}
+              setSelectedPriceRange={setSelectedPriceRange}
+              selectedAvailability={selectedAvailability}
+              setSelectedAvailability={setSelectedAvailability}
+            />
           </div>
           <div className='home-container'>
           {/*Rendering the category buttons*/}
@@ -106,8 +153,8 @@ function Home () {
             <button className='category-buttons' onClick={() => handleCategoryClick('aquaculture')}>Aquaculture</button>
             <button className='category-buttons' onClick={() => handleCategoryClick('camelids')}>Camelids</button>
             <button className='category-buttons' onClick={() => handleCategoryClick('apiary')}>Apiary</button>
-            <button className='category-buttons' onClick={() => handleCategoryClick('exotic-animals')}>Exotic Animals</button>
-            <button className='category-buttons' onClick={() => handleCategoryClick('small-mammals')}>Small Mammals</button>
+            <button className='category-buttons' onClick={() => handleCategoryClick('exotic_animals')}>Exotic Animals</button>
+            <button className='category-buttons' onClick={() => handleCategoryClick('small_mammals')}>Small Mammals</button>
             <button className='category-buttons' onClick={() => handleCategoryClick('other')}>Other</button>
           </div>
 

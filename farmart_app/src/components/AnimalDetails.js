@@ -31,6 +31,7 @@ function AnimalDetails() {
                 <h2>{animal.type} - Kes. {animal.price}</h2>
                 <div className="additional-animal-details">
                     <>
+                    <h5>Breed: {animal.breed}</h5>
                     <h5>Age: {animal.age}</h5>
                     <h5>Weight: {animal.weight}</h5>
                     <div>
