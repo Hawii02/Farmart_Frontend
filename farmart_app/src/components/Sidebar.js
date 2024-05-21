@@ -19,31 +19,42 @@ function Sidebar({
   const [showPriceRange, setShowPriceRange] = useState(false);
   const [showAvailability, setShowAvailability] = useState(false);
 
-  const categories = ['Poultry', 'Livestock', 'Equines', 'Aquaculture', 'Camelids', 'Apiary', 'Exotic_animals', 'Small_mammals', 'Other'];
+  const categories = [
+    { id: 1, name: 'Poultry' },
+    { id: 2, name: 'Livestock' },
+    { id: 3, name: 'Equines' },
+    { id: 4, name: 'Camelids'},
+    { id: 5, name: 'Apiary'},
+    { id: 6, name: 'Aquaculture'},
+    { id: 7, name: 'Exotic_animals' },
+    { id: 8, name: 'Small_mammals' },
+    { id: 9, name: 'Other' }
+  ];
+
   const types = {
-    Poultry: ['Chicken', 'Duck', 'Turkey', 'Goose', 'Quail', 'Guinea_fowl'],
-    Livestock: ['Cattle', 'Goat', 'Sheep', 'Pig'],
-    Equines: ['Horse', 'Donkey'],
-    Aquaculture: ['Fish', 'Crustacean', 'Mollusc'],
-    Camelids: ['Camel', 'Llama'],
-    Apiary: ['Bees'],
-    Exotic_animals: ['Peacock', 'Parrot', 'Ostrich'],
-    Small_mammals: ['Rabbit', 'Guinea_pig'],
-    Other: ['']
+    1: ['Chicken', 'Duck', 'Turkey', 'Goose', 'Quail', 'Guinea_fowl'],
+    2: ['Cattle', 'Goat', 'Sheep', 'Pig'],
+    3: ['Horse', 'Donkey'],
+    6: ['Fish', 'Crustacean', 'Mollusc'],
+    4: ['Camel', 'Llama'],
+    5: ['Bees'],
+    7: ['Peacock', 'Parrot', 'Ostrich'],
+    8: ['Rabbit', 'Guinea_pig'],
+    9: ['']
   };
   const breeds = {
-    Chicken: ['Original Kienyenji','Kenbro', 'Kari Improved', 'Rainbow Rooster', 'Naked Neck', 'Kuroiler', 'Sasso', 'ISA Brown', 'Hy-line', 'Lohmann', 'Shavers', 'Cobb-500', 'Arbor-Acre', 'Ross 308', 'Hubbard'],
+    Chicken: ['Original Kienyenji','Kenbro', 'Kari Improved', 'Rainbow Rooster', 'Naked Neck', 'Kuroiler', 'Sasso', 'ISA Brown', 'Hy-line', 'Lohmann', 'Shavers', 'Cobb-500', 'Arbor-Acre', 'Ross 308', 'Hubbard', 'Rhode Island Red'],
     Turkey: ['Bourbon Red', 'Royal Palm', 'Narragansett', 'Standard Bronze', 'Black Turkey', 'Auburn', 'Midget White', 'White Turkey', 'Slate'],
     Duck: ['Peking', 'Ayleshbari','Mascovi', 'Ruel Kagua', 'Swiden Duck', 'White / Gray Indian Runner', 'Khaki Campbell Duck'],
     Goose: ['Pilgrim', 'Egyptian', 'Steinbacher', 'Brecon Buff', 'Embden'],
     Quail: ['Bob white', 'White-breasted','Coturnix', 'British Range', 'English White','Manchurian Golden', 'Pharaoh', 'Tuxedo'],
     Guinea_fowl: ['Red Wattle Helmet', 'Blue Wattle Helmet', 'Vulturine / Bald-headed'],
     Cattle: ['Maasai Zebu', 'Kamasia/Samburu zebu', 'Winam / Kavirondo Zebu', 'Nandi Zebu', 'Watende Zebu', 'Low land / Coastal Zebu', 'Teso Zebu', 'Turkana / Karapokot Zebu', 'Kikuyu Zebu', 'Jiddu Zebu', 'Orma Boran', 'Somali Boran', 'Kenyan Boran', 'Kenyan Sahiwal', 'Friesian / Holstein-Friesian', 'Ayrshire', 'Guernsey', 'Jersey'],
-    Goats: ['Small East African Goat', 'Galla', 'Kenyan Alpine', 'Toggenburg', 'Anglo Nubian', 'Boer', 'Kalahari Red'],
+    Goat: ['Small East African Goat', 'Galla', 'Kenyan Alpine', 'Toggenburg', 'Anglo Nubian', 'Boer', 'Kalahari Red'],
     Sheep: ['Small East Africa Sheep', 'Black Head Persian', 'Red Maasai', 'Dorper', 'Corriedale', 'Hampshire Down', 'Romney Mash', 'Merino'],
     Pig: ['Duroc', 'Large White', 'Landrace'],
     Donkey: ['Somali', 'Maasai', 'East African'],
-    Horse: ['Thoroughbred', 'Arabian', 'Kenya Pony', 'Warmbloods', 'Quarter Horse', 'Crossbreds'],
+    Horse: ['Thoroughbred', 'Arabian', 'Kenya Pony', 'Warmbloods', 'Quarter Horse', 'Crossbreds', 'Friesian'],
     Fish: ['Tilapia', 'African Catfish', 'Rainbow Trout', 'Mudfish', 'Koi Fish', 'Salmon', 'Tuna', 'Eel', 'Trouts', 'Common Carp'],
     Crustacean: ['Crabs', 'Lobsters', 'Shrimps / Crayfish / Crawfish', 'Prawns'],
     Mollusc: ['Oysters'],
@@ -61,18 +72,25 @@ function Sidebar({
     setter(selectedValue === value ? '' : value);
   };
 
-  const handleCategoryClick = (category) => {
-    setSelectedType('');  
+  const handleCategoryClick = (category_id) => {
+    setSelectedCategory(category_id);
+    setSelectedType('');
     setSelectedBreed('');
-    handleButtonClick(setSelectedCategory, category, selectedCategory);
-    setShowType(true); 
-    setShowBreed(false);  
+    handleButtonClick(setSelectedCategory, category_id, selectedCategory);
+    setShowType(true);
+    setShowBreed(false);
   };
-
+  
   const handleTypeClick = (type) => {
-    setSelectedBreed('');  
-    handleButtonClick(setSelectedType, type, selectedType);
-    setShowBreed(true);  
+    if (selectedType === type) {
+      setSelectedType('');
+      setSelectedBreed('');
+      setShowBreed(false);
+    } else {
+      setSelectedType(type);
+      setSelectedBreed('');
+      setShowBreed(true);
+    }
   };
 
   return (
@@ -88,11 +106,11 @@ function Sidebar({
           <div className='filter-options'>
             {categories.map(category => (
               <button
-                key={category}
-                className={selectedCategory === category ? 'selected' : ''}
-                onClick={() => handleCategoryClick(category)}
+                key={category.id}
+                className={selectedCategory === category.id ? 'selected' : ''}
+                onClick={() => handleCategoryClick(category.id)}
               >
-                {category}
+                {category.name}
               </button>
             ))}
           </div>
@@ -105,10 +123,10 @@ function Sidebar({
                 <button
                   key={type}
                   className={selectedType === type ? 'selected' : ''}
-                  onClick={() => handleTypeClick(type)}
+                  onClick={() => handleTypeClick(type)} 
                 >
-                  {type}
-                </button>
+                {type}
+               </button>
               ))}
             </div>
           </li>
