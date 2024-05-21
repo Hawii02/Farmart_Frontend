@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import './Login.css';
 
 function Login() {
   const [credentials, setCredentials] = useState({ username: '', password: '', role: 'user' });
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -36,6 +39,10 @@ function Login() {
     }
   };
 
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div className="background-image">
       <div className="auth-container">
@@ -50,15 +57,20 @@ function Login() {
             required 
             autoComplete="username" 
           />
-          <input 
-            type="password" 
-            name="password" 
-            placeholder="Password" 
-            value={credentials.password} 
-            onChange={handleChange} 
-            required 
-            autoComplete="current-password" 
-          />
+          <div className="password-container">
+            <input 
+              type={showPassword ? "text" : "password"}
+              name="password"
+              placeholder="Password"
+              value={credentials.password}
+              onChange={handleChange}
+              required 
+              autoComplete="current-password"
+            />
+            <span className="password-toggle-icon" onClick={togglePasswordVisibility}>
+              <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+            </span>
+          </div>
           <select name="role" value={credentials.role} onChange={handleChange} autoComplete="role">
             <option value="user">User</option>
             <option value="farmer">Farmer</option>
@@ -71,3 +83,5 @@ function Login() {
 }
 
 export default Login;
+
+
