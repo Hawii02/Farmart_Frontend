@@ -18,7 +18,7 @@ function AddAnimal () {
   function handleSubmit (e) {
     e.preventDefault();
 
-    fetch('/api/animals', {
+    fetch('https://farmart-backend-6.onrender.com/animals', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

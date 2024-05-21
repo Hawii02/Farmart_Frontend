@@ -22,7 +22,6 @@ const ContactUs = () => {
           <li> <FacebookIcon/> </li>
           <li><XIcon /> </li>
           <li><InstagramIcon /> </li>
-
         </ul>
       </div>
       <div className="message-form">
