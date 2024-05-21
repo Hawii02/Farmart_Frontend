@@ -98,7 +98,7 @@ function Sidebar({
           </div>
         )}
         {showType && selectedCategory && types[selectedCategory] && (
-          <li>
+          <li className='typeanimal'>
             <PetsOutlinedIcon /> Animal Type
             <div className='filter-options'>
               {types[selectedCategory].map(type => (

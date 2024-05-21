@@ -15,6 +15,7 @@
     padding-top: 25px;
     font-weight: bold;
     color: rgb(43, 42, 42);
+    
 }
 
 .sidebar li:hover{
@@ -41,3 +42,9 @@
     border: 1px solid green;
 }
   
+
+/* .typeanimal{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+} */
