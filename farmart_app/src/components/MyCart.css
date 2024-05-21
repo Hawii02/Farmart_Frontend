@@ -114,7 +114,9 @@
 
 .cart-navigate-button {
   padding: 10px 20px;
-  margin-bottom: 1%;
+  /*margin-bottom: 1%;*/
+  margin-top: 50px;
+
   background-color: green;
   color: white;
   border: none;
@@ -132,9 +134,19 @@
 }
 
 .cart-button-delete {
-  background-color: red;
+  border: none;
+  background: transparent;
+  opacity: 0.5;
+  cursor: pointer;
+
 }
 
 .cart-button-quantity:hover {
   background-color: green;
+}
+
+
+.cart-button{
+  display: flex;
+  justify-content: space-between;
 }

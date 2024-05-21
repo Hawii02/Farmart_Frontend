@@ -5,6 +5,7 @@ import Footer from './Footer';
 import { CartContext } from './MyCartContext';
 import HomeSliders from './HomeSliders';
 import { Link } from 'react-router-dom';
+import NavBar from './NavBar';
 
 function Home () {
   // Setting states for loading the DOM, all animals, and selecting categories
@@ -78,6 +79,7 @@ function Home () {
 
   return (
     <div>
+      <NavBar />
       <HomeSliders />
       <div className='home-sidebar'>
         <div>
