@@ -139,6 +139,7 @@ function Home () {
   return (
       <div>
         < HomeSliders />
+        < NavBar  />
         <div className='home-sidebar'>
           <div>
             <div className='search-bar'>
