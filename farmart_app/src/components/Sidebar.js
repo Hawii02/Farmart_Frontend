@@ -32,7 +32,7 @@ function Sidebar({
   ];
 
   const types = {
-    1: ['Chicken', 'Duck', 'Turkey', 'Goose', 'Quail', 'Guinea_fowl'],
+    1: ['Chicken', 'Duck', 'Turkey', 'Geese', 'Quail', 'Guinea_fowl'],
     2: ['Cattle', 'Goat', 'Sheep', 'Pig'],
     3: ['Horse', 'Donkey'],
     6: ['Fish', 'Crustacean', 'Mollusc'],
@@ -44,9 +44,9 @@ function Sidebar({
   };
   const breeds = {
     Chicken: ['Original Kienyenji','Kenbro', 'Kari Improved', 'Rainbow Rooster', 'Naked Neck', 'Kuroiler', 'Sasso', 'ISA Brown', 'Hy-line', 'Lohmann', 'Shavers', 'Cobb-500', 'Arbor-Acre', 'Ross 308', 'Hubbard', 'Rhode Island Red'],
-    Turkey: ['Bourbon Red', 'Royal Palm', 'Narragansett', 'Standard Bronze', 'Black Turkey', 'Auburn', 'Midget White', 'White Turkey', 'Slate'],
-    Duck: ['Peking', 'Ayleshbari','Mascovi', 'Ruel Kagua', 'Swiden Duck', 'White / Gray Indian Runner', 'Khaki Campbell Duck'],
-    Goose: ['Pilgrim', 'Egyptian', 'Steinbacher', 'Brecon Buff', 'Embden'],
+    Turkey: ['Bourbon Red', 'Norfolk', 'Royal Palm', 'Narragansett', 'Standard Bronze', 'Black Turkey', 'Auburn', 'Midget White', 'White Turkey', 'Slate'],
+    Duck: ['Pekin', 'Ayleshbari','Mascovi', 'Ruel Kagua', 'Swiden', 'White / Gray Indian Runner', 'Khaki Campbell'],
+    Geese: ['Pilgrim', 'Egyptian', 'Steinbacher', 'Brecon Buff', 'Embden'],
     Quail: ['Bob white', 'White-breasted','Coturnix', 'British Range', 'English White','Manchurian Golden', 'Pharaoh', 'Tuxedo'],
     Guinea_fowl: ['Red Wattle Helmet', 'Blue Wattle Helmet', 'Vulturine / Bald-headed'],
     Cattle: ['Maasai Zebu', 'Kamasia/Samburu zebu', 'Winam / Kavirondo Zebu', 'Nandi Zebu', 'Watende Zebu', 'Low land / Coastal Zebu', 'Teso Zebu', 'Turkana / Karapokot Zebu', 'Kikuyu Zebu', 'Jiddu Zebu', 'Orma Boran', 'Somali Boran', 'Kenyan Boran', 'Kenyan Sahiwal', 'Friesian / Holstein-Friesian', 'Ayrshire', 'Guernsey', 'Jersey'],

@@ -1,49 +1,50 @@
 import React, { useState } from 'react';
-
-function AddAnimal () {
+    
+function AddAnimal() {
   const [animalData, setAnimalData] = useState({
     category: '',
     type: '',
     breed: '',
     image_url: '',
     price: 0,
-    farmer_id: '' 
+    farmer_id: ''
   });
 
-  function handleChange (e) {
+  function handleChange(e) {
     const { name, value } = e.target;
     setAnimalData({ ...animalData, [name]: value });
-  };
+  }
 
-  function handleSubmit (e) {
+  function handleSubmit(e) {
     e.preventDefault();
 
-    fetch('/api/animals', {
+    fetch("https://farmart-backend-6.onrender.com/animals", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(animalData)
     })
-    .then((response) => {
-      if (response.ok) {
-        console.log('Animal added successfully!');
-        //Reset the form fields after successful submission
-        setAnimalData({
-          breed: '',
-          category: '',
-          image_url: '',
-          price: 0,
-          farmer_id: ''
-        });
-      } else {
-        console.error('Failed to add animal');
-      }
-    })
-    .catch((error) => {
-      console.error('Error adding animal:', error);
-    });
-  };
+      .then((response) => {
+        if (response.ok) {
+          console.log('Animal added successfully!');
+          // Reset the form fields after successful submission
+          setAnimalData({
+            category: '',
+            type: '',
+            breed: '',
+            image_url: '',
+            price: 0,
+            farmer_id: ''
+          });
+        } else {
+          console.error('Failed to add animal');
+        }
+      })
+      .catch((error) => {
+        console.error('Error adding animal:', error);
+      });
+  }
 
   return (
     <div>
@@ -53,8 +54,8 @@ function AddAnimal () {
           Category:
           <input
             type="text"
-            name="breed"
-            value={animalData.breed}
+            name="category"
+            value={animalData.category}
             onChange={handleChange}
           />
         </label>
@@ -63,19 +64,18 @@ function AddAnimal () {
           Type:
           <input
             type="text"
-            name="category"
-            value={animalData.category}
+            name="type"
+            value={animalData.type}
             onChange={handleChange}
           />
         </label>
-        <br />
         <br />
         <label>
           Breed:
           <input
             type="text"
-            name="category"
-            value={animalData.category}
+            name="breed"
+            value={animalData.breed}
             onChange={handleChange}
           />
         </label>
@@ -100,10 +100,20 @@ function AddAnimal () {
           />
         </label>
         <br />
+        <label>
+          Farmer ID:
+          <input
+            type="text"
+            name="farmer_id"
+            value={animalData.farmer_id}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
         <button type="submit">Add Animal</button>
       </form>
     </div>
   );
-};
+}
 
 export default AddAnimal;
