@@ -1,0 +1,84 @@
+.animal-details-card {
+    padding-top: 5px;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 10%;
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: 5px;
+}
+
+.image-container {
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animal-details-image {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90%; 
+    height: auto; 
+    max-width: 400px; 
+    max-height: 400px; 
+    object-fit: cover; 
+}
+
+.animal-details-click {
+    padding-left: 15px; 
+}
+
+.animal-details-buttons {
+    background-color: green;
+    padding: 3px;
+    font-weight: bold;
+    color: white;
+}
+
+.continue-shopping {
+    margin-top: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.continue-shopping a {
+    color: green;
+    cursor: pointer;
+    text-decoration: none;
+    /*animation: blink 3s infinite;*/
+}
+
+/*@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}*/
+
+.continue-shopping li {
+    list-style: none;
+}
+
+.continue-shopping-button {
+    padding: 10px;
+    margin-bottom: 2%;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+}
+
+.continue-shopping-button:hover {
+    transform: scale(1.2);
+  }
+

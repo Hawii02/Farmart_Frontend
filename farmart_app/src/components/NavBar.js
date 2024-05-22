@@ -1,29 +1,37 @@
-
-import React from "react";
+import React, { useContext } from 'react';
 import "./NavBar.css";
 import { Link } from "react-router-dom"; 
+import { CartContext } from './MyCartContext';
+import logo from '../Images/logo.png'
 
-const Navbar = () => {
+function Navbar () {
+  const { getTotalItems } = useContext(CartContext);
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">Farmart</Link>
+        <Link to="/">
+          <img className='logo'src={logo} alt="logo" />
+          <span className="navbar-title">
+            Farm<span className='art'>art</span>
+          </span>
+        </Link>
       </div>
       <ul className="navbar-links">
-        <li>
-          <Link to="/signup">SignUp</Link>
-        </li>
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/products">Products</Link>
+          <Link to="/aboutus">About Us</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/contactus">Contact Us</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/signup">Account</Link>
+        </li>
+        <li>
+          <Link to="/cart">My Cart ({getTotalItems()})</Link>
         </li>
       </ul>
     </nav>

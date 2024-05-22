@@ -1,0 +1,70 @@
+.home-sidebar {
+    display: flex;
+    flex-direction: row; 
+}
+
+.home-container {
+    margin-top: 30px;
+    width: 75%;
+    padding-left: 30px;
+}
+
+.animals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    gap: 20px; 
+    justify-items: centre;
+}
+
+.animal-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    width: calc(30% - 10px);
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    overflow: hidden;
+    word-wrap: break-word; 
+    border-radius: 10px;
+}
+
+.image-container {
+   justify-content: center;
+}
+
+.images {
+    margin-left: 20%;
+    padding-top: 10px;
+    height: 170%;
+    width: 200%;
+}
+
+.category-buttons {
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    padding-right: 10px;
+    color: rgb(43, 42, 42);
+}
+
+.category-buttons:hover {
+    background-color: green;
+}
+
+.add-cart-button {
+    margin-top: 10px;
+    background-color: green;
+    color:#f9f9f9;
+}
+
+.button-showdetails:hover {
+    background-color: green;
+}
+
+.search-bar {
+    padding-top: 30px;
+    padding-left: 30px;
+}
