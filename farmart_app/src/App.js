@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import MyCart from "./components/MyCart";
 import Farmers from "./components/Farmers";
 import { CartProvider } from "./components/MyCartContext"; 
+import Payment from "./components/Payment";
 import AnimalDetails from './components/AnimalDetails'
 import "./styles/App.css";
 import AddAnimal from "./components/AddAnimal";
@@ -29,7 +30,8 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/cart" element={<MyCart />} /> 
+          <Route path="/cart" element={<MyCart />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="/farmers" element={<Farmers />} />
           <Route path="/addanimal" element={<AddAnimal />} />
           {/* <Route path="/confirmrejectorder" element={<ConfirmRejectOrder/>} /> */}
