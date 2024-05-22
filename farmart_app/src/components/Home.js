@@ -84,7 +84,6 @@ function Home () {
     setSearchTerm(searchTerm);
     const animalsFiltered = allAnimals.filter(animal => 
       animal.breed?.toLowerCase().includes(searchTerm) || 
-      animal.category_id?.includes(searchTerm) ||
       animal.type?.toLowerCase().includes(searchTerm)
    );
     setFilteredAnimals(animalsFiltered);
@@ -112,7 +111,6 @@ function Home () {
     if (searchTerm) {
       filtered = filtered.filter(animal => 
         animal.breed?.toLowerCase().includes(searchTerm) || 
-        animal.category_id?.includes(searchTerm) ||
         animal.type?.toLowerCase().includes(searchTerm)
       );
     }
