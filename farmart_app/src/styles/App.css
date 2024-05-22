@@ -2,3 +2,9 @@ body{
   background-color: lightgray;
   
 }
+
+.navbar-app {
+  position: sticky;
+  top: 0;
+  background-color: lightgray;
+}

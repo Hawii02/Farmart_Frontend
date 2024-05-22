@@ -1,20 +1,20 @@
-import React, { useContext } from 'react';
-import { CartContext } from './MyCartContext';
-import { Link } from 'react-router-dom';
-import './MyCart.css';
+  import React, { useContext } from 'react';
+  import { CartContext } from './MyCartContext';
+  import { Link } from 'react-router-dom';
+  import './MyCart.css';
 
-function MyCart() {
-  const { cart, removeFromCart, updateQuantity, getTotalPrice } = useContext(CartContext);
+  function MyCart() {
+    const { cart, removeFromCart, updateQuantity, getTotalPrice } = useContext(CartContext);
 
-  return (
-    <div className="cart-container">
-      {cart.length === 0 ? (
-        <p>Your cart is empty</p>
-      ) : (
-        <>
-          <ul>
-            {cart.map((animal) => {
-              const cartPrice = animal.price * animal.quantity;
+    return (
+      <div className="cart-container">
+        {cart.length === 0 ? (
+          <p>Your cart is empty</p>
+        ) : (
+          <>
+            <ul>
+              {cart.map((animal) => {
+                const cartPrice = animal.price * animal.quantity;
 
               return (
                 <li key={animal.id} className='cart-item'>
@@ -54,4 +54,4 @@ function MyCart() {
   );
 }
 
-export default MyCart;
+  export default MyCart;

@@ -13,31 +13,33 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     gap: 20px; 
-    justify-items: left;
+    justify-items: centre;
 }
 
 .animal-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     display: inline-block;
     width: calc(30% - 10px);
-    width: 150px;
+    width: 170px;
+    height: 170px;
     margin: 10px;
     overflow: hidden;
     word-wrap: break-word; 
     border-radius: 10px;
 }
 
-.animal-card .image-container {
-    width: 100%; 
-    overflow: hidden; 
+.image-container {
+   justify-content: center;
 }
 
-.animal-card .images {
-    width: 100%; 
-    max-height: 30%; 
+.images {
+    margin-left: 20%;
+    padding-top: 10px;
+    height: 170%;
+    width: 200%;
 }
 
 .category-buttons {
@@ -54,7 +56,6 @@
 
 .add-cart-button {
     margin-top: 10px;
-    margin-bottom: 10px;
     background-color: green;
     color:#f9f9f9;
 }
@@ -67,4 +68,3 @@
     padding-top: 30px;
     padding-left: 30px;
 }
-
