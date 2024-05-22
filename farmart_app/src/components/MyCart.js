@@ -1,14 +1,20 @@
 import React, { useContext, useState } from 'react';
 import { CartContext } from './MyCartContext';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './MyCart.css';
 
 function MyCart() {
-  const { cart, removeFromCart, updateQuantity, getTotalPrice } = useContext(CartContext);
+  const { cart, removeFromCart, updateQuantity, getTotalPrice, clearCart } = useContext(CartContext);
   const [isPaymentComplete, setIsPaymentComplete] = useState(false);
+  const navigate = useNavigate ();
   
   const onCompletePayment = () => {
     setIsPaymentComplete(true);
+    clearCart();
+  };
+
+  const handleGoToPayment = () => {
+    navigate('/payment', { onCompletePayment });
   };
 
   return (
@@ -48,7 +54,7 @@ function MyCart() {
                 Total: Kes. {getTotalPrice()}
               </div>
               <Link to="/payment">
-                <button className="cart-navigate-button">Go to Payment</button>
+                <button onClick={handleGoToPayment} className="cart-navigate-button">Go to Payment</button>
               </Link>
               <div className='continue-shopping-cart'>
                 <Link to="/">
@@ -65,4 +71,4 @@ function MyCart() {
   );
 }
 
-  export default MyCart;
+export default MyCart;

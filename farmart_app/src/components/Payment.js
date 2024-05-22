@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { useLocation } from 'react-router-dom';
 import mpesa from '../Images/mpesa.png';
 import airtel from '../Images/airtel.png';
-import "./Payment.css";
+import './Payment.css';
+import { CartContext } from './MyCartContext'; 
+import Footer from './Footer';
 
-function Payment({ cart, onCompletePayment }) {
+function Payment() {
+    const { cart, getTotalPrice, clearCart } = useContext(CartContext);
+    const location = useLocation();
+    const totalAmount = getTotalPrice(); 
+    const onCompletePayment = location.state?.onCompletePayment;
+
     const [paymentMode, setPaymentMode] = useState(null);
     const [paymentSuccess, setPaymentSuccess] = useState(false);
     const [shippingDetails, setShippingDetails] = useState({
@@ -27,7 +35,10 @@ function Payment({ cart, onCompletePayment }) {
     const handlePayment = () => {
         setTimeout(() => {
             setPaymentSuccess(true);
-            onCompletePayment();
+            if (onCompletePayment) {
+                onCompletePayment();
+            }
+            clearCart();
         }, 2000);
     };
 
@@ -65,6 +76,7 @@ function Payment({ cart, onCompletePayment }) {
 
     return (
         <div>
+            <div className='shipping-payment'>
             <div className='checkout-details'>
                 {shippingSubmitted && !editMode ? (
                     <div>
@@ -76,7 +88,7 @@ function Payment({ cart, onCompletePayment }) {
                         <button onClick={handleEditShipping}>Edit</button>
                     </div>
                 ) : (
-                    <div>
+                    <div className='shipping-details'>
                         <h2>{editMode ? 'Edit' : 'Add'} Shipping Details</h2>
                         <form onSubmit={handleSubmitShipping}>
                             <div>
@@ -128,8 +140,9 @@ function Payment({ cart, onCompletePayment }) {
                     </div>
                 )}
             </div>
+            <div className='payments'>
             {!paymentMode && (
-                <div>
+                <div >
                     <h2>Select Payment Mode</h2>
                     <button onClick={() => handleModeChange('mobileMoney')}>Mobile Money</button>
                     <button onClick={() => handleModeChange('cardPayment')}>Card Payment</button>
@@ -152,6 +165,7 @@ function Payment({ cart, onCompletePayment }) {
                             required
                         />
                     </div>
+                    <div>Total Amount: Kes. {totalAmount}</div>
                     <button onClick={handlePayment}>Confirm Payment</button>
                 </div>
             )}
@@ -201,6 +215,7 @@ function Payment({ cart, onCompletePayment }) {
                             required
                         />
                     </div>
+                    <div>Total Amount: Kes. {totalAmount}</div>
                     <button onClick={handlePayment}>Confirm Payment</button>
                 </div>
             )}
@@ -211,6 +226,9 @@ function Payment({ cart, onCompletePayment }) {
                 </div>
             )}
         </div>
+        </div>
+        < Footer />
+    </div>
     );
 }
 
