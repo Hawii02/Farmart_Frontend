@@ -16,7 +16,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/register', {
+      const response = await fetch('https://farmart-backend-6.onrender.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ function SignUp() {
       const data = await response.json();
       if (response.ok) {
         alert('Registration successful! Proceeding to Login ');
-        navigate('/login'); // Redirect to Login after successful registration
+        navigate('/login');
       } else {
         throw new Error(data.message || 'Server error');
       }
@@ -81,6 +81,7 @@ function SignUp() {
             <option value="farmer">Farmer</option>
           </select>
           <button type="submit">Sign Up</button>
+          <p className="login-link">Already have an account? <span className="login-link-text" onClick={() => navigate('/login')}>Log in</span></p>
         </form>
       </div>
     </div>

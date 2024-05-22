@@ -16,7 +16,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('https://farmart-backend-6.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -27,7 +27,7 @@ function Login() {
       if (response.ok) {
         localStorage.setItem('token', data.access_token); // Save the token
         if (credentials.role === 'farmer') {
-          navigate('/farmer-dashboard'); // Redirect to the farmer dashboard
+          navigate('/farmers'); // Redirect to the farmer dashboard
         } else {
           navigate('/home'); // Redirect to the home page
         }
@@ -76,6 +76,7 @@ function Login() {
             <option value="farmer">Farmer</option>
           </select>
           <button type="submit">Login</button>
+          <p className="signup-link">Don't have an account? <span onClick={() => navigate('/')}>Sign up</span></p>
         </form>
       </div>
     </div>
