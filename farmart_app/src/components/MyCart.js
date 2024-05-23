@@ -53,6 +53,7 @@ function MyCart() {
               <div className="cart-total">
                 Total: Kes. {getTotalPrice()}
               </div>
+              <div className='cart-button'>
               <Link to="/payment">
                 <button onClick={handleGoToPayment} className="cart-navigate-button">Go to Payment</button>
               </Link>
@@ -63,6 +64,7 @@ function MyCart() {
                   </button>
                 </Link>
               </div> 
+              </div>
             </>
           )}
         </>
