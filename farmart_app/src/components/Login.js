@@ -121,7 +121,7 @@ function Login() {
         if (credentials.role === 'farmer') {
           navigate('/farmer-dashboard'); // Redirect to the farmer dashboard
         } else {
-          navigate('/home'); // Redirect to the home page
+          navigate('/payment'); // Redirect to payment
         }
       } else {
         throw new Error(data.message || 'Server error');
@@ -168,7 +168,7 @@ function Login() {
             <option value="farmer">Farmer</option>
           </select>
           <button type="submit">Login</button>
-          <p className="signup-link">Don't have an account? <span onClick={() => navigate('/')}>Sign up</span></p>
+          <p className="signup-link">Don't have an account? <span onClick={() => navigate('/signup')}>Sign up</span></p>
         </form>
       </div>
     </div>

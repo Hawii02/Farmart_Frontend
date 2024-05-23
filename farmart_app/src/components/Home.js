@@ -5,15 +5,17 @@ import Footer from './Footer';
 import { CartContext } from './MyCartContext';
 import HomeSliders from './HomeSliders';
 import { Link } from 'react-router-dom';
-import NavBar from './NavBar';
+import Navbar from './NavBar';
 
 function Home () {
-  // Setting states for loading the DOM, all animals, and selecting categories
+  /*Setting states for loading the DOM, all animals and selecting categories*/
   const [isError, setIsError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [allAnimals, setAllAnimals] = useState([]);
+  ///const [allAnimals, setAllAnimals] = useState(animals);
   const [filteredAnimals, setFilteredAnimals] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  ///const [showAnimalDetails, setShowAnimalDetails] = useState(false);
   const { addToCart } = useContext(CartContext);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedType, setSelectedType] = useState(null);
@@ -77,7 +79,7 @@ function Home () {
     }
   }
 
-  // Function to filter animals by search term
+  /*Function to filter animals by search term*/
   function handleSearchChange(event) {
     const searchTerm = event.target.value.toLowerCase();
     setSearchTerm(searchTerm);
@@ -129,14 +131,14 @@ function Home () {
     return <div>Error occurred while loading data</div>;
   }
 
-  // Renders when the DOM loads but the animals are not fetched
+  /*Renders when the DOM loads but the animals are not fetched */
   if (!isLoaded) {
     return <div>Loading...</div>;
   }
 
   return (
       <div>
-        < NavBar  />
+        < Navbar  />
         < HomeSliders />
         <div className='home-sidebar'>
           <div>
@@ -176,14 +178,13 @@ function Home () {
             <button className='category-buttons' onClick={() => handleCategoryClick(9)}>Other</button>
           </div>
 
-          {/* Rendering the animals */}
+          {/*Rendering the animals*/}
           <div className='animals'>
             <ul>
-              {console.log(filteredAnimals, "Real filtered animals")}
               {filteredAnimals.map((animal) => (
                 <li key={animal.id} className='animal-card'>
                   <div className='image-container'>
-                    <Link to={`/animals/${animal.id}`} state={{ animal }}>
+                    <Link to={'/animal/${animal.id}'} state={{animal}}>
                       <img className='images' src={animal.image_url} alt={animal.name} />
                     </Link>
                   </div>
@@ -201,9 +202,9 @@ function Home () {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
-  );
+      < Footer />
+      </div>
+  )
 }
 
-export default Home;
+export default Home

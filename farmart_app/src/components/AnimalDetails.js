@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useLocation, Link } from 'react-router-dom';
 import { CartContext } from './MyCartContext';
 import Footer from './Footer'
+import NavBar from './NavBar';
 import "./AnimalDetails.css"
 
 function AnimalDetails() {
@@ -27,6 +28,7 @@ function AnimalDetails() {
 
   return (
     <div>
+        < NavBar />
         <li key={animal.id} className='animal-details-card'>
             <div className='image-container'>
                 <img className='animal-details-image' src={animal.image_url} alt={animal.name} />
