@@ -3,8 +3,13 @@ import './ContactUs.css';
 import XIcon from '@mui/icons-material/X';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Navbar from './NavBar';
+
+
 const ContactUs = () => {
   return (
+    <div className='Cont'>
+      <Navbar/>
     <div className="contact-container">
       <div className="contact-info">
         <h2>Contact Information</h2>
@@ -46,6 +51,7 @@ const ContactUs = () => {
         </form>
       </div>
     </div>
+   </div> 
   );
 }
 
