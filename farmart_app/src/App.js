@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-import NavBar from "./components/NavBar";
 import MyCart from "./components/MyCart";
 import Farmers from "./components/Farmers";
 import { CartProvider } from "./components/MyCartContext"; 
@@ -25,13 +25,12 @@ function App() {
         </div>  
       <div className="routes"> */}
         <Routes>
-          {/* <Route path="/" element={<SignUp />} />
-          <Route path="/login" element={<Login/>} /> */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<SignUp />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/home" element={<Home />} />
           {/* <Route path="/home" element={<Home />} /> */}
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
-          {/* <Route path="/signup" element={<SignUp />} /> */}
           <Route path="/cart" element={<MyCart />} /> 
           <Route path="/farmers" element={<Farmers />} />
           <Route path="/addanimal" element={<AddAnimal />} />
@@ -47,3 +46,6 @@ function App() {
 }
 
 export default App;
+
+
+

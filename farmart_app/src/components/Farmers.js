@@ -75,9 +75,7 @@ function Farmers() {
          </div>
       <div className='f-card'>
         <div className='card-inner'>
-          <Link to='Categories'>
             <h3> CATEGORIES </h3>
-            </Link>
           <icon1><CategoryOutlinedIcon/></icon1>
         </div>
         <h1> 7 </h1>
