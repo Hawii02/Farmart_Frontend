@@ -1,0 +1,30 @@
+.payment-image {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.shipping-payment {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.checkout-details {
+    background-color: transparent;
+    border: 1px solid green;
+    padding: 1px 3px;
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+.payments {
+    background-color: transparent;
+    border: 1px solid green;
+    padding: 1px 3px;
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+
+
