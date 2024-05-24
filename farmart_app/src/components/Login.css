@@ -1,0 +1,162 @@
+/* body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background-image {
+    background-image: url('https://wallpapers.com/images/hd/stolen-snapshot-of-a-farm-animal-bap8olzldnb0plxy.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    /* background-color: rgba(0, 0, 0, 0.5); Dark overlay for better text visibility
+  } */
+/*   
+  .auth-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .auth-form h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .auth-form input, .auth-form button, .auth-form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } */
+  
+  /* .auth-form button {
+    background-color:  #4CAF50; Green background for the button */
+    /* color: white; */
+    /* font-size: 16px;
+    border: none;
+    cursor: pointer;
+  } */
+  
+  /* .auth-form button:hover {
+    background-color:  #45a049; 
+  } */
+  
+  /* .auth-form input:focus, .auth-form select:focus {
+    border-color:  #4CAF50; /* Green focus border */
+  /* }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  } */ 
+
+
+
+
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background-image {
+    background-image: url('https://wallpapers.com/images/hd/stolen-snapshot-of-a-farm-animal-bap8olzldnb0plxy.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  }
+  
+  .auth-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .auth-form h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .auth-form input, .auth-form button, .auth-form select {
+    width: 90%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .auth-form button {
+    background-color:  #4CAF50; /* Green background for the button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .auth-form button:hover {
+    background-color:  #45a049; /* Darker green on hover */
+  }
+  
+  .auth-form input:focus, .auth-form select:focus {
+    border-color:  #4CAF50; /* Green focus border */
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .signup-link {
+    text-align: center;
+    margin-top: 15px; /* Spacing above the link */
+  }
+  
+  .signup-link span {
+    color: #007BFF; /* Link color */
+    cursor: pointer; /* Changes cursor to pointer to indicate clickability */
+    text-decoration: underline; /* Underlines to emphasize it's a link */
+    font-weight: bold; /* Bold to make it stand out */
+  }
+  
+  .signup-link span:hover {
+    color: #0056b3; /* Darker shade when hovered */
+  }

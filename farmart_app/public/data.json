@@ -8,7 +8,7 @@
         "price": 7500,
         "age": "2.8 years",
         "weight": "Est. 3.6kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -20,7 +20,7 @@
         "price": 1500,
         "age": "1.8 years",
         "weight": "Est. 2.6kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -32,7 +32,7 @@
         "price": 1000,
         "age": "20 weeks",
         "weight": "Est. 1.6kgs",
-        "product_availability": "Sold-out",
+        "status": "Sold-out",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -44,7 +44,7 @@
         "price": 6500,
         "age": "1.8 years",
         "weight": "Est. 2.8kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -56,7 +56,7 @@
         "price": 7500,
         "age": "4.5 years",
         "weight": "Est. 90kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -68,7 +68,7 @@
         "price": 10500,
         "age": "4 years",
         "weight": "Est. 18kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -80,7 +80,7 @@
         "price": 8500,
         "age": "3 years",
         "weight": "Est. 22kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -92,7 +92,7 @@
         "price": 65000,
         "age": "6 years",
         "weight": "Est. 94kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -104,19 +104,19 @@
         "price": 98000,
         "Age": "7.5 years",
         "Weight": "Est. 112kgs",
-        "product_availability": "Sold-out",
+        "status": "Sold-out",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
       {
         "id": 10,
-        "category": "Exotic Animals",
+        "category": "Exotic_Animals",
         "type": "Ostrich",
         "breed": "Maasai",
         "price": 20500,
         "age": "3.9 years",
         "weight": "Est. 22kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -128,7 +128,7 @@
         "price": 850,
         "age": "2 years",
         "weight": "Est. 3.6kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -140,7 +140,7 @@
         "price": 7500,
         "age": "2.8 years",
         "weight": "Est. 3.6kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -152,7 +152,7 @@
         "price": 1500,
         "age": "1.8 years",
         "weight": "Est. 2.6kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -164,7 +164,7 @@
         "price": 1000,
         "age": "20 weeks",
         "weight": "Est. 1.6kgs",
-        "product_availability": "Sold-out",
+        "status": "Sold-out",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -176,7 +176,7 @@
         "price": 6500,
         "age": "1.8 years",
         "weight": "Est. 2.8kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -188,7 +188,7 @@
         "price": 7500,
         "age": "4.5 years",
         "weight": "Est. 90kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -196,11 +196,11 @@
         "id": 17,
         "category": "Livestock",
         "type": "Goat",
-        "breed": "Toggenburg",
+        "breed": "Galla",
         "price": 10500,
         "age": "4 years",
         "weight": "Est. 18kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -212,7 +212,7 @@
         "price": 8500,
         "age": "3 years",
         "weight": "Est. 22kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -224,7 +224,7 @@
         "price": 65000,
         "age": "6 years",
         "weight": "Est. 94kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -236,19 +236,19 @@
         "price": 98000,
         "Age": "7.5 years",
         "Weight": "Est. 112kgs",
-        "product_availability": "Sold-out",
+        "status": "Sold-out",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
       {
         "id": 21,
-        "category": "Exotic Animals",
+        "category": "Exotic_Animals",
         "type": "Ostrich",
         "breed": "Maasai",
         "price": 20500,
         "age": "3.9 years",
         "weight": "Est. 22kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       },
@@ -260,7 +260,7 @@
         "price": 850,
         "age": "2 years",
         "weight": "Est. 3.6kgs",
-        "product_availability": "Available",
+        "status": "Available",
         "description": "This animal is known for its remarkable resilience and adaptability. With a robust build and a friendly temperament, it thrives in diverse environments. Its distinctive markings and vibrant coat make it a favorite among breeders. Ideal for various agricultural settings, it offers excellent productivity and a pleasant disposition, ensuring ease of management.",
         "image_url":"https://www.africanfarming.com/wp-content/uploads/komatsu.jpeg" 
       }

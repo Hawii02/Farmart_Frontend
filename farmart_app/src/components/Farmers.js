@@ -6,6 +6,7 @@ import PetsOutlinedIcon from '@mui/icons-material/PetsOutlined';
 import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom';
 import Footer from './Footer';
 
 function Farmers() {
@@ -74,7 +75,7 @@ function Farmers() {
          </div>
       <div className='f-card'>
         <div className='card-inner'>
-          <h3> CATEGORIES </h3>
+            <h3> CATEGORIES </h3>
           <icon1><CategoryOutlinedIcon/></icon1>
         </div>
         <h1> 7 </h1>

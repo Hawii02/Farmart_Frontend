@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useLocation, Link } from 'react-router-dom';
 import { CartContext } from './MyCartContext';
 import Footer from './Footer'
+import NavBar from './NavBar';
 import "./AnimalDetails.css"
 
 function AnimalDetails() {
@@ -21,18 +22,22 @@ function AnimalDetails() {
     return <div>Loading...</div>;
   }
 
+  const capitalizeFirstLetter = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   return (
     <div>
+        < NavBar />
         <li key={animal.id} className='animal-details-card'>
             <div className='image-container'>
                 <img className='animal-details-image' src={animal.image_url} alt={animal.name} />
             </div>
             <div className='animal-details-click'>
-                <h2>{animal.type} - Kes. {animal.price}</h2>
+                <h2>{capitalizeFirstLetter(animal.type)} - Kes. {animal.price}</h2>
                 <div className="additional-animal-details">
                     <>
-                    <h5>Age: {animal.age}</h5>
-                    <h5>Weight: {animal.weight}</h5>
+                    <h5>Breed: {animal.breed}</h5>
                     <div>
                         <button className="animal-details-buttons" onClick={() => addToCart(animal)}>
                             Add to Cart
@@ -47,14 +52,14 @@ function AnimalDetails() {
                             </button>
                         </Link>            
                     </div>
-                    </> 
                     <div className='continue-shopping'>
                         <Link to="/">
                             <button className="continue-shopping-button">
                                 Continue Shopping
                             </button>
                         </Link>
-                    </div> 
+                    </div>
+                    </>  
                 </div> 
             </div>
         </li>

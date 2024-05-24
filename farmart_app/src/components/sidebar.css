@@ -15,14 +15,37 @@
     padding-top: 25px;
     font-weight: bold;
     color: rgb(43, 42, 42);
+    
 }
 
 .sidebar li:hover{
     text-transform: uppercase;
     color: green;
+    cursor: pointer;
 }
 
 .sidebar ul {
     list-style-type: none; /* Remove bullets */
-  }
+}
+
+.filter-options button {
+    background-color: transparent;
+    border: 1px solid green;
+    padding: 1px 3px;
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 3px;
+}
   
+.filter-options button.selected {
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+}
+  
+
+/* .typeanimal{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+} */

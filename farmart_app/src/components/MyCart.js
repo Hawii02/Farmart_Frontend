@@ -1,8 +1,10 @@
 
 import React, { useContext, useEffect,useState } from 'react';
 import { CartContext } from './MyCartContext';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './MyCart.css';
+import Navbar from './NavBar';
+import cart from '../Images/cart.gif'
 
 function MyCart() {
   const { cart, removeFromCart, updateQuantity, getTotalPrice } = useContext(CartContext);
@@ -64,14 +66,23 @@ function MyCart() {
   // }, [cart]);
 
   return (
-    <div className="cart-container">
-      {cart.length === 0 ? (
-        <p>Your cart is empty</p>
-      ) : (
-        <>
-          <ul>
-            {cart.map((animal) => {
-              const cartPrice = animal.price * animal.quantity;
+    <div>
+      < Navbar />
+      <div className="cart-container">
+        {isPaymentComplete ? (
+          <p>Your order is being processed. Thank you!</p>
+        ) : (
+          <>
+            {cart.length === 0 ? (
+              <>
+                <p>Your cart is empty</p>
+                <img src={"https://i.pinimg.com/originals/c8/01/cd/c801cd6d10481403f3d88b2ef24b731a.gif"} alt="Cows grazing" width="700" height="500" />
+              </>
+            ) : (
+              <>
+                <ul>
+                  {cart.map((animal) => {
+                    const cartPrice = animal.price * animal.quantity;
 
               return (
                 <li key={animal.id} className='cart-item'>

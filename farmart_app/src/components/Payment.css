@@ -1,0 +1,91 @@
+.payment-image {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.shipping-image {
+    max-width: 70px;
+    max-height: 70px;
+    margin-left: 80%;
+}
+
+.gateways-image {
+    max-width: 120px;
+    max-height: 120px;
+    margin-left: 70%;
+}
+
+.shipping-payment-cartsummary {
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkout-details  {
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 120%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.payments {
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 120%;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.cart-summary {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1px 3px;
+    cursor: pointer;
+    margin-left: 10%;
+    border-radius: 3px;
+    width: 40%;
+}
+
+.cart-summary li {
+    list-style: none;
+}
+
+.cart-summary-display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cart-summary-image {
+    padding-bottom: 10px;
+}
+
+.cart-summary-details {
+    padding-left: 10px;
+}
+
+.payment-button{
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+
+.payment-button:hover {
+    background-color: green;
+}
+
+.payment-titles {
+    color: green;
+    font-size: large;
+}
+
+.cart-summary-title {
+    color: green;
+    font-size: large;
+    padding-left: 15px;
+}
