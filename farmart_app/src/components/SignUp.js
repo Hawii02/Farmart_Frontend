@@ -92,13 +92,14 @@
 
 
 import React, { useState } from 'react';
+import { toast} from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import './SignUp.css';
 
 function SignUp() {
-  const [inputs, setInputs] = useState({ username: '', password: '', email: '', role: 'user' });
+  const [inputs, setInputs] = useState({ username: '', password: '', email: '', role: '' });
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
@@ -109,7 +110,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://farmart-backend-6.onrender.com/register', {
+      const response = await fetch('https://farmart-backend-3.onrender.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -118,13 +119,13 @@ function SignUp() {
       });
       const data = await response.json();
       if (response.ok) {
-        alert('Registration successful! Proceeding to Login ');
+        toast.success('Registration successful!🎉 Proceeding to Login', {position:"top-center"});
         navigate('/login');
       } else {
         throw new Error(data.message || 'Server error');
       }
     } catch (error) {
-      alert('Registration failed: ' + error.message);
+      toast.error('Registration failed  🚩', {position:"top-center"});
     }
   };
 

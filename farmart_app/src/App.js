@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
@@ -19,6 +21,7 @@ import UpdateAnimal from "./components/UpdateAnimal";
 function App() {
   return (
     <CartProvider>
+      <ToastContainer/>
     <Router>
       {/* <div className="Parent">
         <div className="navbar-app">
