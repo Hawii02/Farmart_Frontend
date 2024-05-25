@@ -7,7 +7,7 @@ import SignUp from "./components/SignUp";
 import NavBar from "./components/NavBar";
 import MyCart from "./components/MyCart";
 import Farmers from "./components/Farmers";
-import { CartProvider } from "./components/MyCartContext"; 
+import CartProvider  from "./components/MyCartContext"; 
 import Payment from "./components/Payment";
 import AnimalDetails from './components/AnimalDetails'
 import "./styles/App.css";
@@ -17,19 +17,19 @@ import UpdateAnimal from "./components/UpdateAnimal";
 
 function App() {
   return (
-    <CartProvider>
+    // <CartProvider>
     <Router>
-      <div className="Parent">
+      {/* <div className="Parent">
         <div className="navbar-app">
           <NavBar />
         </div>  
-      <div className="routes">
+      <div className="routes"> */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<SignUp />} /> 
+          <Route path="/home" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<SignUp />} />
           <Route path="/cart" element={<MyCart />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/farmers" element={<Farmers />} />
@@ -38,10 +38,10 @@ function App() {
           <Route path="/updateanimal" element={<UpdateAnimal />} />
           <Route path='/animal/:id' element={<AnimalDetails />} /> 
         </Routes>
-      </div>
-    </div>
+      {/* </div>
+    // </div> */}
     </Router>
-    </CartProvider>
+    // </CartProvider>
   )
 }
 

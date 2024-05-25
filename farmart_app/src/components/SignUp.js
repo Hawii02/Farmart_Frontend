@@ -5,23 +5,23 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import './SignUp.css';
 
 function SignUp() {
-  const [inputs, setInputs] = useState({ username: '', password: '', email: '', role: 'user' });
+  const [credentials, setCredentials] = useState({ username: '', password: '', email: '', role: 'user' });
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setInputs({ ...inputs, [e.target.name]: e.target.value });
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://farmart-backend-6.onrender.com/register', {
+      const response = await fetch('http://127.0.0.1:5000/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(inputs)
+        body: JSON.stringify(credentials)
       });
       const data = await response.json();
       if (response.ok) {
@@ -48,7 +48,7 @@ function SignUp() {
             type="text" 
             name="username" 
             placeholder="Username" 
-            value={inputs.username} 
+            value={credentials.username} 
             onChange={handleChange} 
             required 
             autoComplete="username"
@@ -57,7 +57,7 @@ function SignUp() {
             type="email" 
             name="email" 
             placeholder="Email" 
-            value={inputs.email} 
+            value={credentials.email} 
             onChange={handleChange} 
             required 
             autoComplete="email"
@@ -67,7 +67,7 @@ function SignUp() {
               type={showPassword ? "text" : "password"}
               name="password"
               placeholder="Password"
-              value={inputs.password}
+              value={credentials.password}
               onChange={handleChange}
               required
               autoComplete="new-password"
@@ -76,7 +76,7 @@ function SignUp() {
               <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
             </span>
           </div>
-          <select name="role" value={inputs.role} onChange={handleChange} autoComplete="role">
+          <select name="role" value={credentials.role} onChange={handleChange} autoComplete="role">
             <option value="user">User</option>
             <option value="farmer">Farmer</option>
           </select>

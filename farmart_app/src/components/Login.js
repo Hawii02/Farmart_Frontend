@@ -16,7 +16,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://farmart-backend-6.onrender.com/login', {
+      const response = await fetch('http://127.0.0.1:5000/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ function Login() {
         }
       } else {
         throw new Error(data.message || 'Server error');
-      }
+    }
     } catch (error) {
       alert('Login failed: ' + error.message);
     }
@@ -84,5 +84,4 @@ function Login() {
 }
 
 export default Login;
-
 
