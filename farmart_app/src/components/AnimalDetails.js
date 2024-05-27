@@ -62,8 +62,8 @@ function AnimalDetails() {
                     </>  
                 </div> 
             </div>
-        </li>
-        < Footer />
+         </li>
+      < Footer />
     </div>
   );
 }

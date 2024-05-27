@@ -163,6 +163,7 @@ function Home () {
               setSelectedAvailability={setSelectedAvailability}
             />
           </div>
+  
           <div className='home-container'>
           {/*Rendering the category buttons*/}
           <div >

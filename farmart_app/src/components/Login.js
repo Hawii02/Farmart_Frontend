@@ -98,7 +98,7 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import './Login.css';
 
 function Login() {
-  const [credentials, setCredentials] = useState({ username: '', password: '', role: 'user' });
+  const [credentials, setCredentials] = useState({ username: '', password: '', role: 'farmer' });
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 

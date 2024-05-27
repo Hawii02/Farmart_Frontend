@@ -99,7 +99,7 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import './SignUp.css';
 
 function SignUp() {
-  const [inputs, setInputs] = useState({ username: '', password: '', email: '', role: '' });
+  const [inputs, setInputs] = useState({ username: '', password: '', email: '', role: 'farmer' });
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
