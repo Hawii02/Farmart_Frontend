@@ -190,7 +190,12 @@ function Home () {
                     </Link>
                   </div>
                   <div className='animal-details'>
-                    {capitalizeFirstLetter(animal.type)} - Kes. {animal.price}
+                  <div className="animal-type">
+                    {capitalizeFirstLetter(animal.type)} 
+                    </div>
+                  <div className='animal-price'>
+                    Ksh. {animal.price}
+                    </div>
                   </div>
                   <div>
                     <button className="add-cart-button" onClick={() => addToCart(animal)}>

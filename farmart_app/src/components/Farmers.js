@@ -1,6 +1,6 @@
 import React from 'react'
 import './farmers.css'
-import FarmersSidebar from "./FarmersSidebar";
+import FarmersSidebar from './FarmersSidebar';
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
 import PetsOutlinedIcon from '@mui/icons-material/PetsOutlined';
 import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';

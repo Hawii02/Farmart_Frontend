@@ -15,12 +15,13 @@
 
 .farmersidebar li{
     padding-top: 25px;
-    
+    font-weight: bold;
 }
+
 .farmersidebar li:hover{
     text-transform: uppercase;
     color: green;
-    cursor: pointer;
+    cursor: pointer; 
 }
 .farmersidebar ul {
     list-style-type: none; /* Remove bullets */
