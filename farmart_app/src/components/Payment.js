@@ -136,8 +136,8 @@ function Payment() {
                                 <img className='shipping-image' src={logistics} alt="logistics" />
                                 <h2 className='payment-titles'>{editMode ? 'Edit' : 'Add'} Shipping Details</h2>
                                 <form onSubmit={handleSubmitShipping}>
-                                    <div>
-                                        <label>Full Name:</label>
+                                    <div className='labels'>
+                                        <label >Full Name:</label>
                                         <input
                                             type="text"
                                             id="fullName"
@@ -147,8 +147,8 @@ function Payment() {
                                             required
                                         />
                                     </div>
-                                    <div>
-                                        <label>Town:</label>
+                                    <div className='labels'>
+                                        <label >Town:</label>
                                         <input
                                             type="text"
                                             id="town"
@@ -158,8 +158,8 @@ function Payment() {
                                             required
                                         />
                                     </div>
-                                    <div>
-                                        <label>Nearest Landmark:</label>
+                                    <div className='labels'> 
+                                        <label >Nearest Landmark:</label>
                                         <input
                                             type="text"
                                             id="landmark"
@@ -169,8 +169,8 @@ function Payment() {
                                             required
                                         />
                                     </div>
-                                    <div>
-                                        <label>Phone Number:</label>
+                                    <div className='labels'>
+                                        <label >Phone Number:</label>
                                         <input
                                             type="text"
                                             id="phoneNumber"
@@ -212,7 +212,7 @@ function Payment() {
                                 </div>
                                 {selectedMobileOption && (
                                     <div>
-                                        <div>
+                                        <div className='labels'>
                                             <label>Mobile Number:</label>
                                             <input
                                                 type="text"
@@ -235,7 +235,7 @@ function Payment() {
                         )}
                         {paymentMode === 'cardPayment' && !paymentSuccess && (
                             <div>
-                                <div>
+                                <div className='labels'>
                                     <label>Card Holder Name:</label>
                                     <input
                                         type="text"
@@ -246,7 +246,7 @@ function Payment() {
                                         required
                                     />
                                 </div>
-                                <div>
+                                <div className='labels'>
                                     <label>Card Number:</label>
                                     <input
                                         type="text"
@@ -257,8 +257,8 @@ function Payment() {
                                         required
                                     />
                                 </div>
-                                <div>
-                                    <label>CVV:</label>
+                                <div className='labels'>
+                                    <label className='labels'>CVV:</label>
                                     <input
                                         type="text"
                                         id="cvv"
@@ -268,8 +268,8 @@ function Payment() {
                                         required
                                     />
                                 </div>
-                                <div>
-                                    <label>Expiry Date:</label>
+                                <div className='labels'>
+                                    <label >Expiry Date:</label>
                                     <input
                                         type="text"
                                         id="expiryDate"
@@ -279,7 +279,7 @@ function Payment() {
                                         required
                                     />
                                 </div>
-                                <div>Total Amount: Kes. {totalAmount}</div>
+                                <div className='labels'>Total Amount: Kes. {totalAmount}</div>
                                 {paymentMode !== null && (
                                     <button className='payment-button' onClick={handleCompletePayment} disabled={!isPaymentValid()}>
                                         Complete Payment

@@ -8,6 +8,7 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import Navbar from './NavBar';
 
 function Farmers() {
 
@@ -58,6 +59,7 @@ function Farmers() {
   
   return (
     <div className='farmer-all'>
+    < Navbar  />
     <div className='farmer-container'>
       <FarmersSidebar />
       <div className='side-grid'>

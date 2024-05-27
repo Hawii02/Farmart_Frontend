@@ -119,7 +119,7 @@ function Login() {
       if (response.ok) {
         localStorage.setItem('token', data.access_token); // Save the token
         if (credentials.role === 'farmer') {
-          navigate('/farmer-dashboard'); // Redirect to the farmer dashboard
+          navigate('/farmers'); // Redirect to the farmer dashboard
         } else {
           navigate('/payment'); // Redirect to payment
         }
