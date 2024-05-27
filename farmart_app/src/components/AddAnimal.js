@@ -144,7 +144,7 @@ function AddAnimal() {
     price: 0,
     description: '',
     image_url: '',
-    status: ''
+    farmer_id: 0
   });
 
   const [message, setMessage] = useState('');
@@ -181,7 +181,7 @@ function AddAnimal() {
           price: 0,
           description: '',
           image_url: '',
-          status: ''
+          farmer_id: 0
         });
       })
       .catch((error) => {
@@ -246,11 +246,11 @@ function AddAnimal() {
           />
         </label>
         <label className="add-animal-label">
-          Status:
+          Farmer Id:
           <input
-            type="text"
-            name="status"
-            value={animalData.status}
+            type="number"
+            name="farmer_id"
+            value={animalData.farmer_id}
             onChange={handleChange}
             className="add-animal-input"
           />
