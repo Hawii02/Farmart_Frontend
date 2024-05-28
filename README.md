@@ -93,6 +93,7 @@ Key Features :
  User-friendly secure payment options 
 
 ###PROBLEM STATEMENT
+
    Intermediary Dependence:
   Farmers must depend on brokers,who take significant cuts from their profits.
   Inflated Prices:
@@ -116,4 +117,17 @@ With an easy-to-use interface accessible through the website,FarmArt expands mar
 
       Transparent Transactions:
 By Leveraging technology to streamline the livestock trade,FarmArt aims to empower farmers,offer better  prices to buyers and foster a more sustainable and transparent agricultural sector in Kenya.
+
+####   CHALLENGED  FACED
+
+Time Constraint :
+   Working under tight project deadlines imposed by academic requirements and completion  timelines, which added pressure to deliver a fully functional product within a limited time frame.
+Learning Curve: 
+  Overcoming the steep learning curve associated with developing a comprehensive e-commerce platform, which involved self-study, online courses, and seeking advice from experienced developers.
+Optimizing Performance: 
+  Ensuring the platform could handle a growing number of users and transactions without compromising performance, requiring knowledge of scalable architecture and performance optimization techniques.
+Git Merge Collaboration:
+  Regularly managing and resolving merge conflicts in Git, which required careful coordination, frequent communication, and meticulous attention to code integration processes.
+
+#####FUTURE   IMPROVEMENTS
 
