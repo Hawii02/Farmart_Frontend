@@ -304,7 +304,7 @@ function Payment() {
                                     <img src={item.image_url} alt={item.breed} className='payment-image'/>
                                 </div>
                                 <div className='cart-summary-details'>
-                                    {capitalizeFirstLetter(item.type)} - {item.breed} x {item.quantity}: Kes. {item.price * item.quantity}
+                                    {capitalizeFirstLetter(item.type)} - {item.breed} x {item.quantity}: Ksh. {item.price * item.quantity}
                                 </div>
                             </li>
                         ))}
