@@ -1,67 +1,67 @@
-/* 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    background-color: #fff;
-    padding: 20px 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #555;
-  }
-  
-  input[type="text"],
-  input[type="number"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  } */
+.update-animal-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.update-animal-title {
+  margin-bottom: 20px;
+}
+
+.animal-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.animal-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: left;
+}
+
+.animal-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.animal-card-details {
+  margin-top: 10px;
+}
+
+.animal-card-button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.update-animal-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.update-animal-label {
+  margin: 10px 0;
+}
+
+.update-animal-input {
+  padding: 5px;
+  width: 80%;
+}
+
+.update-animal-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.update-animal-message {
+  margin-top: 20px;
+  color: green;
+}

@@ -10,13 +10,80 @@
 }
 
 .animals {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-    gap: 20px; 
-    justify-items: centre;
-}
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
 
-.animal-card {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .animal-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.2s;
+  }
+  
+  .animal-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-container {
+    width: 60%;
+    height: 150px;
+    display: flex;
+    padding-left: 40px;
+  }
+  
+  .images {
+    width: 130px;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .image-container:hover .images {
+    transform: scale(1.1);
+  }
+  
+  .animal-details {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #333;
+  }
+  
+  .add-cart-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background-color 0.3s;
+  }
+  
+  .add-cart-button:hover {
+    background-color: #218838;
+  }
+  
+
+/* .animal-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 10px;
@@ -29,18 +96,11 @@
     overflow: hidden;
     word-wrap: break-word; 
     border-radius: 10px;
-}
+} */
 
-.image-container {
+/* .image-container {
    justify-content: center;
-}
-
-.images {
-    margin-left: 20%;
-    padding-top: 10px;
-    height: 160%;
-    width: 200%;
-}
+} */
 
 .category-buttons {
     margin-right: 10px;
@@ -52,12 +112,6 @@
 
 .category-buttons:hover {
     background-color: green;
-}
-
-.add-cart-button {
-    margin-top: 10px;
-    background-color: green;
-    color:#f9f9f9;
 }
 
 .button-showdetails:hover {

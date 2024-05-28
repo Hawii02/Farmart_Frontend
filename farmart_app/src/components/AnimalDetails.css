@@ -17,8 +17,10 @@
 .image-container {
     width: 40%; 
     display: flex;
+    padding-top: 30px;
     justify-content: center;
     align-items: center;
+    padding-right: 30px;
 }
 
 .animal-details-image {
