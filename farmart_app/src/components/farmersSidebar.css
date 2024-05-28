@@ -16,6 +16,7 @@
 .farmersidebar li{
     padding-top: 25px;
     font-weight: bold;
+    margin-left: 20px;
 }
 
 .farmersidebar li:hover{
