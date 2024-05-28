@@ -67,6 +67,13 @@ npm start
 
 
 ## TECHNOLOGY USED
+REACT
+FLASK
+PYTHON
+FIGMA
+SQL LITE
+API INTEGRATION
+
 
 
 ##Project Overview
