@@ -64,21 +64,49 @@ To start the application, run:
 ```bash
 npm start
 
+
+
+## TECHNOLOGY USED
+
+
 ##Project Overview
-FarmArt is an e-commerce platform connecting kenyan farmers directly with buyers,eliminating brokers to ensure better prices for farmers and affordability for buyers.
+ FarmArt is an e-commerce platform connecting kenyan farmers directly with buyers,eliminating brokers to ensure better prices for farmers and affordability for buyers.
 
 Objectives:
-Empower farmers by maximizing their profits
-Ensure fair pricing for buyers
-Build a trustworthy,transparent marketplace.
-Provide easy access via web and mobile apps.
-Promote sustainable farming practices
+ Empower farmers by maximizing their profits
+ Ensure fair pricing for buyers
+ Build a trustworthy,transparent marketplace.
+ Provide easy access via web and mobile apps.
+ Promote sustainable farming practices
 
 
 Key Features :
-User-friendly interface
-Detailed listings and advanced search 
-User-friendly secure payment options 
+ User-friendly interface
+ Detailed listings and advanced search 
+ User-friendly secure payment options 
 
 ###PROBLEM STATEMENT
+   Intermediary Dependence:
+  Farmers must depend on brokers,who take significant cuts from their profits.
+  Inflated Prices:
+  Buyers face higher costs due to the addition of broker fees.
+  Market Access:
+  Farmers struggle with restricted access to a broader market,limiting their sales opportunities.
+  Lack of Transparency
+  Limited visibility into pricing and transaction processes reduces trust among parties involved .
+
+####  SOLUTION STATEMENT
+
+     Direct Market Access:
+
+FarmArt enables farmers to list and sell their livestock directly to buyers,removing intermediaries  and allowing farmers to retain more of their profits.
+  
+      Fair Pricing:
+By facilitating direct transactions,FarmArt ensures buyers pay fair market prices without inflated broker fees,making livestock more affordable.
+
+      Market Expansion: 
+With an easy-to-use interface accessible through the website,FarmArt expands market access for farmers,connecting them with a larger pool of buyers.
+
+      Transparent Transactions:
+By Leveraging technology to streamline the livestock trade,FarmArt aims to empower farmers,offer better  prices to buyers and foster a more sustainable and transparent agricultural sector in Kenya.
 
