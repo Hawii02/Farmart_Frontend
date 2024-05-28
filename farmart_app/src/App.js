@@ -17,30 +17,30 @@ import UpdateAnimal from "./components/UpdateAnimal";
 function App() {
   return (
     <CartProvider>
-    <Router>
-      <div className="Parent">
-        <div className="navbar-app">
-          <NavBar />
-        </div>  
-      <div className="routes">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/cart" element={<MyCart />} /> 
-          <Route path="/farmers" element={<Farmers />} />
-          <Route path="/addanimal" element={<AddAnimal />} />
-          <Route path="/confirmrejectorder" element={<ConfirmRejectOrder/>} /> 
-          <Route path="/updateanimal" element={<UpdateAnimal />} />
-          <Route path='/animal/:id' element={<AnimalDetails />} /> 
-        </Routes>
-      </div>
-    </div>
-    </Router>
+      <Router>
+        <div className="Parent">
+          <div className="navbar-app">
+            <NavBar />
+          </div>  
+          <div className="routes">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/aboutus" element={<AboutUs />} />
+              <Route path="/contactus" element={<ContactUs />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/cart" element={<MyCart />} /> 
+              <Route path="/farmers" element={<Farmers />} />
+              <Route path="/addanimal" element={<AddAnimal />} />
+              <Route path="/confirmrejectorder" element={<ConfirmRejectOrder />} /> 
+              <Route path="/updateanimal" element={<UpdateAnimal />} />
+              <Route path='/animal/:id' element={<AnimalDetails />} /> 
+            </Routes>
+          </div>
+        </div>
+      </Router>
     </CartProvider>
-  )
+  );
 }
 
 export default App;

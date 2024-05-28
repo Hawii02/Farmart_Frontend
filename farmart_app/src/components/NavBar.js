@@ -3,7 +3,7 @@ import "./NavBar.css";
 import { Link } from "react-router-dom"; 
 import { CartContext } from './MyCartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'; // Import the user icon
 import logo from '../Images/logo.png';
 
 function Navbar () {
@@ -30,12 +30,14 @@ function Navbar () {
           <Link to="/contactus">Contact Us</Link>
         </li>
         <li>
-          <Link to="/signup">Account</Link>
-        </li>
-        <li>
           <Link to="/cart">
             <FontAwesomeIcon icon={faShoppingCart} />
             ({getTotalItems()})
+          </Link>
+        </li>
+        <li>
+          <Link to="/signup">
+            <FontAwesomeIcon icon={faUser} />
           </Link>
         </li>
       </ul>
