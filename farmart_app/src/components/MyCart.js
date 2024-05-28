@@ -34,7 +34,7 @@ function MyCart() {
             {cart.length === 0 ? (
               <>
                 <p>Your cart is empty</p>
-                <img src={"https://i.pinimg.com/originals/c8/01/cd/c801cd6d10481403f3d88b2ef24b731a.gif"} alt="Cows grazing" width="800" height="500" />
+                <img src={"https://i.pinimg.com/originals/c8/01/cd/c801cd6d10481403f3d88b2ef24b731a.gif"} alt="Cows grazing" width="800px" height="600px" />
               </>
             ) : (
               <>
@@ -48,7 +48,7 @@ function MyCart() {
                           <img src={animal.image_url} alt={animal.breed} className='cart-item-image' />
                           <div className='cart-item-info'>
                             <div>{capitalizeFirstLetter(animal.type)} - {animal.breed}</div>
-                            <div className='cart-item-price'>Kes. {cartPrice}</div>
+                            <div className='cart-item-price'>Ksh. {cartPrice}</div>
                             <div className='cart-item-quantity'>
                               <button className='cart-button-quantity' onClick={() => updateQuantity(animal.id, animal.quantity - 1)}>-</button>
                               <input type="number" value={animal.quantity} onChange={(e) => updateQuantity(animal.id, parseInt(e.target.value))} />
