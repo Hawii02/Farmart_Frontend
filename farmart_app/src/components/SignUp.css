@@ -1,90 +1,166 @@
-/* SignUp.css */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+/* body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  } */
+/*   
+  .background-image { */
+    /* Adjust the path below to point to your actual image location */
+    /* background-image: url('https://wallpapers.com/images/hd/stolen-snapshot-of-a-farm-animal-bap8olzldnb0plxy.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
 
-.background-image {
   
-  background-image: url('https://wallpapers.com/images/hd/stolen-snapshot-of-a-farm-animal-bap8olzldnb0plxy.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  /* .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    
+  /* } */
+  
+  /* .signup-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  } */
+  
+  /* .signup-form h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+   */
+  /* .signup-form input, .signup-form button, .signup-form select {
+    width: 90%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } */
+  
+  /* .signup-form button {
+    background-color: #4CAF50; /* Green background for the button */
+    /* color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  } */ */
+  
+  /* .signup-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-form input:focus, .signup-form select:focus {
+    border-color: #4CAF50;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }  */
 
-.signup-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); 
-}
 
-.signup-form {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
 
-.signup-form h1 {
-  color: #333;
-  font-size: 24px;
-  text-align: center;
-}
-
-.signup-form input, .signup-form button, .signup-form select {
-  width: 90%;
-  padding: 12px;
-  margin-top: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.signup-form button {
-  background-color: #4CAF50; 
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.signup-form button:hover {
-  background-color: #45a049;
-}
-
-.signup-form input:focus, .signup-form select:focus {
-  border-color: #4CAF50;
-}
-
-.password-container {
-  position: relative;
-}
-
-.password-toggle-icon {
-  position: absolute;
-  right: 24px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.login-link {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.login-link-text {
-  color: #0066cc;
-  cursor: pointer; 
-  text-decoration: underline; 
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.login-link-text:hover {
-  color: #004499; 
-}
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background-image {
+    
+    background-image: url('https://wallpapers.com/images/hd/stolen-snapshot-of-a-farm-animal-bap8olzldnb0plxy.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .signup-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .signup-form h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .signup-form input, .signup-form button, .signup-form select {
+    width: 90%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .signup-form button {
+    background-color: #4CAF50; 
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-form input:focus, .signup-form select:focus {
+    border-color: #4CAF50;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-link-text {
+    color: #0066cc;
+    cursor: pointer; 
+    text-decoration: underline; 
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .login-link-text:hover {
+    color: #004499; 
+  }

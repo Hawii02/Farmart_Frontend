@@ -21,6 +21,7 @@
 .sidebar li:hover{
     text-transform: uppercase;
     color: green;
+    cursor: pointer;
 }
 
 .sidebar ul {

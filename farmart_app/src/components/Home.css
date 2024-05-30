@@ -38,7 +38,7 @@
 .images {
     margin-left: 20%;
     padding-top: 10px;
-    height: 170%;
+    height: 160%;
     width: 200%;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .category-buttons:hover {
-    background-color: green;
+    background-color: green;         
 }
 
 .add-cart-button {
@@ -68,3 +68,4 @@
     padding-top: 30px;
     padding-left: 30px;
 }
+

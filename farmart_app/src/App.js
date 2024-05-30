@@ -1,13 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-import NavBar from "./components/NavBar";
 import MyCart from "./components/MyCart";
 import Farmers from "./components/Farmers";
-import CartProvider  from "./components/MyCartContext"; 
+import { CartProvider } from './components/MyCartContext';
 import Payment from "./components/Payment";
 import AnimalDetails from './components/AnimalDetails'
 import "./styles/App.css";
@@ -17,7 +19,8 @@ import UpdateAnimal from "./components/UpdateAnimal";
 
 function App() {
   return (
-    // <CartProvider>
+    <CartProvider>
+      <ToastContainer/>
     <Router>
       {/* <div className="Parent">
         <div className="navbar-app">
@@ -25,11 +28,12 @@ function App() {
         </div>  
       <div className="routes"> */}
         <Routes>
-          <Route path="/" element={<SignUp />} /> 
-          <Route path="/home" element={<Home />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/home" element={<Home />} /> */}
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/login" element={<Login/>} />
           <Route path="/cart" element={<MyCart />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/farmers" element={<Farmers />} />
@@ -39,10 +43,13 @@ function App() {
           <Route path='/animal/:id' element={<AnimalDetails />} /> 
         </Routes>
       {/* </div>
-    // </div> */}
+    </div> */}
     </Router>
     // </CartProvider>
   )
 }
 
 export default App;
+
+
+

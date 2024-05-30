@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast} from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +17,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://127.0.0.1:5000/login', {
+      const response = await fetch('https://farmart-backend-3.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -25,17 +26,18 @@ function Login() {
       });
       const data = await response.json();
       if (response.ok) {
-        localStorage.setItem('token', data.access_token); // Save the token
+        toast.success("Succefully logged in 🎉", {position:"top-center"})
+        localStorage.setItem('token', data.access_token); 
         if (credentials.role === 'farmer') {
-          navigate('/farmers'); // Redirect to the farmer dashboard
+          navigate('/farmers'); 
         } else {
-          navigate('/home'); // Redirect to the home page
+          navigate('/payment'); 
         }
       } else {
         throw new Error(data.message || 'Server error');
-    }
+      }
     } catch (error) {
-      alert('Login failed: ' + error.message);
+      toast.error("Login failed 🚩", {position:"top-center"});
     }
   };
 
@@ -76,7 +78,7 @@ function Login() {
             <option value="farmer">Farmer</option>
           </select>
           <button type="submit">Login</button>
-          <p className="signup-link">Don't have an account? <span onClick={() => navigate('/')}>Sign up</span></p>
+          <p className="signup-link">Don't have an account? <span onClick={() => navigate('/signup')}>Sign up</span></p>
         </form>
       </div>
     </div>
@@ -84,4 +86,3 @@ function Login() {
 }
 
 export default Login;
-

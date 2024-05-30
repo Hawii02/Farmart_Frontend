@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useContext } from 'react'
-import "./Home.css"
-import Sidebar from './Sidebar'
-import Footer from './Footer'
+import React, { useState, useEffect, useContext } from 'react';
+import "./Home.css";
+import Sidebar from './Sidebar';
+import Footer from './Footer';
 import { CartContext } from './MyCartContext';
 import HomeSliders from './HomeSliders';
 import { Link } from 'react-router-dom';
+import Navbar from './NavBar';
 
 function Home () {
   /*Setting states for loading the DOM, all animals and selecting categories*/
@@ -137,6 +138,7 @@ function Home () {
 
   return (
       <div>
+        < Navbar  />
         < HomeSliders />
         <div className='home-sidebar'>
           <div>
